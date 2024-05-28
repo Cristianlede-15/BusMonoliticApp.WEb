@@ -27,5 +27,5 @@ Este repositorio contiene el código fuente para la aplicación de gestión de b
 
 1. **Clona el repositorio:**
    ```sh
-   git clone  https://github.com/Cristianlede-15/BusMonoliticApp_Programacion2.git
-   cd BusMonoliticApp_Programacion2
+   git clone  https://github.com/Cristianlede-15/BusMonoliticApp.WEb.git
+   cd BusMonoliticApp.WEb
