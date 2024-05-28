@@ -1,15 +1,12 @@
-﻿
-using BusTicketsMonolitic.Web.Data.Core;
+﻿using BusMonoliticApp.Web.Data.Core;
 
-namespace BusTicketsMonolitic.Web.Data.Entities
-{ 
-    public class Asiento : BaseEntitiy
+namespace BusMonoliticApp.Web.Data.Entities
+{
+    public class Asiento : BaseEntity
     {
-        public int IdBus { get; set; }
-        public int NumeroPiso { get; set; }
-        public int NumeroAsiento { get; set; }
-        // Relación con la entidad Bus (si es necesario, dependiendo de tu ORM)
-        public Bus Bus { get; set; }
+        public int? IdBus {  get; set; }
+        public int? NumeroPiso {  get; set; }
+        public int? NumeroAsiento { get; set; }
 
     }
 }
