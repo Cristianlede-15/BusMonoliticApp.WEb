@@ -1,8 +1,9 @@
-﻿using BusMonoliticApp.Web.BL.Core;
+﻿
+using BusTicketsMonolitic.Web.BL.Interfaces;
 
 namespace BusTicketsMonolitic.Web.BL.Services
 {
-    public class ClienteService : IService
+    public class ClienteService : IServices
     {
     }
 }
