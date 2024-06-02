@@ -5,5 +5,9 @@
         public BusDbException(string message) : base(message)
         {
         }
+
+        public BusDbException(string? message, Exception? innerException) : base(message, innerException)
+        {
+        }
     }
 }

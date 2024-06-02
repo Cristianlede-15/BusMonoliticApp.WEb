@@ -1,5 +1,9 @@
-﻿using BusMonoliticApp.Web.Data.Context;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
+using BusTicketsMonolitic.Web.Data.DbObjects.Dataconsultation;
 using BusTicketsMonolitic.Web.Data.Exceptions;
 using BusTicketsMonolitic.Web.Data.Interfaces;
 using BusTicketsMonolitic.Web.Data.Models;
@@ -7,78 +11,83 @@ using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
 
 namespace BusTicketsMonolitic.Web.Data.DbObjects
 {
-    public class AsientoDb : IAsientoDb
+    public class AsientoDb : ClaseBaseConsultas<Asiento, AsientoModelsAccess, int>
     {
-        private readonly BoletosBusContext context;
-        private readonly int idBus;
-        Asiento asientoEliminar = null;
+        public AsientoDb(BoletosBusContext context) : base(context) { }
 
-        public AsientoDb(BoletosBusContext context) {
-            this.context = context;
+        public override void Delete(int idAsiento)
+        {
+            var asientoEliminar = this.context.Asiento.Find(idAsiento);
+            if (asientoEliminar != null)
+            {
+                this.context.Asiento.Remove(asientoEliminar);
+                this.context.SaveChanges();
+            }
+            else
+            {
+                throw new AsientoDbException($"No se pudo encontrar el asiento con Id: {idAsiento} para eliminar...");
+            }
         }
 
-        public void DeleteAsiento(AsientoDeleteModel asientoDeleteModel)
+        public override List<AsientoModelsAccess> GetAll()
         {
-            var asientoEliminar = this.context.Asiento.Find(asientoDeleteModel.IdAsiento);
-            asientoEliminar.IdAsiento = asientoDeleteModel.IdAsiento;
-            asientoDeleteModel.FechaEliminacion = asientoDeleteModel.FechaEliminacion;
-
-            this.context.Asiento.Update(asientoEliminar);
-            this.context.SaveChanges();
+            try
+            {
+                return this.context.Asiento.Select(asiento => new AsientoModelsAccess()
+                {
+                    IdBus = (int)asiento.IdBus,
+                    NumeroPiso = asiento.NumeroPiso,
+                    NumeroAsiento = (int)asiento.NumeroAsiento,
+                    FechaCreacion = asiento.FechaCreacion
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new AsientoDbException("Error, no se pudieron obtener todos los asientos", ex);
+            }
         }
 
-        public List<AsientoModelsAccess> GetAsientos()
+        public override AsientoModelsAccess GetById(int idAsiento)
         {
-            return this.context.Asiento.Select(asiento => new AsientoModelsAccess(){
-                IdBus = (int)idBus,
+            var asiento = this.context.Asiento.Find(idAsiento);
+            if (asiento == null)
+            {
+                throw new AsientoDbException($"No se pudo encontrar el asiento con Id: {idAsiento}...");
+            }
+
+            return new AsientoModelsAccess()
+            {
+                IdBus = (int)asiento.IdBus,
                 NumeroPiso = asiento.NumeroPiso,
                 NumeroAsiento = (int)asiento.NumeroAsiento,
                 FechaCreacion = asiento.FechaCreacion
-            }).ToList();
-        }
-
-        public AsientoModelsAccess GetAsientos(int IdAsiento)
-        {
-            var asiento = this.context.Asiento.Find(IdAsiento);
-
-            int? idBus = asiento?.IdBus;
-            AsientoModelsAccess asientoModelsAccess = new AsientoModelsAccess()
-            {
-                IdBus = (int)idBus,
-                NumeroPiso = asiento?.NumeroPiso,
-                NumeroAsiento = (int)asiento.NumeroAsiento,
-                FechaCreacion = asiento.FechaCreacion
             };
-            return asientoModelsAccess;
         }
 
-        public void SaveAsiento(AsientoSaveModel asientoSaveModel)
+        public override void Save(Asiento asiento)
         {
-            Asiento asiento = new Asiento() 
+            try
             {
-                IdBus = asientoSaveModel.IdBus,
-                NumeroPiso = asientoSaveModel.NumeroPiso,
-                NumeroAsiento = asientoSaveModel.NumeroAsiento
-
-            };
-            this.context.Asiento.Add(asiento);
-            this.context.SaveChanges();
+                this.context.Asiento.Add(asiento);
+                this.context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new AsientoDbException("Error, no se pudo guardar...", ex);
+            }
         }
 
-        public void UpdateAsiento(AsientoUpdateModel asientoUpdateModel)
+        public override void Update(Asiento asiento)
         {
-            Asiento asientoActualizar = this.context.Asiento.Find(asientoUpdateModel.IdAsiento);
-
-
-
-            asientoActualizar.FechaModificacion = asientoUpdateModel.FechaModificacion;
-            asientoActualizar.IdAsiento = asientoUpdateModel.IdAsiento;
-            asientoActualizar.NumeroPiso = asientoUpdateModel?.NumeroPiso;
-            asientoActualizar.NumeroAsiento = asientoUpdateModel.NumeroAsiento;
-            asientoActualizar.IdBus = asientoUpdateModel.IdBus;
-
-            this.context.Asiento.Update(asientoActualizar);
-            this.context.SaveChanges();
+            try
+            {
+                this.context.Asiento.Update(asiento);
+                this.context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new AsientoDbException("Error, no se pudo actualizar...", ex);
+            }
         }
     }
 }

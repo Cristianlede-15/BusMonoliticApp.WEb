@@ -4,5 +4,8 @@
     {
         public ClienteDbException(string message) : base(message) { }
 
+        public ClienteDbException(string? message, Exception? innerException) : base(message, innerException)
+        {
+        }
     }
 }

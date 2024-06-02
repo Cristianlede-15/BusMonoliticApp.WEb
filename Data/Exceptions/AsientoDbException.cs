@@ -5,5 +5,9 @@
         public AsientoDbException(string message) : base(message)
         {
         }
+
+        public AsientoDbException(string? message, Exception? innerException) : base(message, innerException)
+        {
+        }
     }
 }

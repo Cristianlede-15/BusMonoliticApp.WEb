@@ -10,6 +10,6 @@ namespace BusMonoliticApp.Web.Data.Entities
         public int? CapacidadPiso2 {  get; set; }
         public int? CapacidadTotal => (CapacidadPiso1 ?? 0) + (CapacidadPiso2 ?? 0);
         public bool? Disponible { get; set; }
-
+        public int IdBus { get; internal set; }
     }
 }
