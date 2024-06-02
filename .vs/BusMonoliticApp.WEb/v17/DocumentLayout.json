@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\dbobjects\\asientodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\asientodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\exceptions\\asientodbexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\exceptions\\asientodbexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\dbobjects\\dataconsultation\\clasebaseconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\dataconsultation\\clasebaseconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\models\\asientomodelsdb\\asientodeletemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\asientomodelsdb\\asientodeletemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClaseBaseConsultas.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\Dataconsultation\\ClaseBaseConsultas.cs",
+              "RelativeDocumentMoniker": "Data\\DbObjects\\Dataconsultation\\ClaseBaseConsultas.cs",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\Dataconsultation\\ClaseBaseConsultas.cs",
+              "RelativeToolTip": "Data\\DbObjects\\Dataconsultation\\ClaseBaseConsultas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:54:24.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsientoDbException.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Exceptions\\AsientoDbException.cs",
+              "RelativeDocumentMoniker": "Data\\Exceptions\\AsientoDbException.cs",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Exceptions\\AsientoDbException.cs",
+              "RelativeToolTip": "Data\\Exceptions\\AsientoDbException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T17:43:49.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsientoDeleteModel.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Models\\AsientoModelsDb\\AsientoDeleteModel.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\AsientoModelsDb\\AsientoDeleteModel.cs",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Models\\AsientoModelsDb\\AsientoDeleteModel.cs",
+              "RelativeToolTip": "Data\\Models\\AsientoModelsDb\\AsientoDeleteModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T17:30:13.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AsientoDb.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\AsientoDb.cs",
+              "RelativeDocumentMoniker": "Data\\DbObjects\\AsientoDb.cs",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\AsientoDb.cs",
+              "RelativeToolTip": "Data\\DbObjects\\AsientoDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:19:43.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

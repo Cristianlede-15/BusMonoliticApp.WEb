@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0a85cd25d22f33523f7bf7a45f8a4b33d68d03f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a3c4aed433dd7ae620f2be6356f7357506ff75c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
