@@ -9,6 +9,7 @@ namespace BusMonoliticApp.Web.Data.Interfaces
     {
         void SaveMesa (MesaSaveModel mesa);
         void UpdateMesa (MesaUpdateModel updateModel);
+        void RemoveMenu();
     }
 
 }

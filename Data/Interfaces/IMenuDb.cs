@@ -6,6 +6,7 @@ namespace BusMonoliticApp.Web.Data.Interfaces
     {
         void SaveMenu(MenuSaveModel menu);
         void UpdateMenu(MenuUpdateModel updateModel);
+        void RemoveMenu();
     }
 
 
