@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\",
+  "WorkspaceRootPath": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|e:\\busmonoliticapp.web\\busmonoliticapp.web\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|c:\\busmonoliticapp.web\\busmonoliticapp.web\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|e:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|c:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|e:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|c:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\entities\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|e:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|c:\\busmonoliticapp.web\\busmonoliticapp.web\\data\\entities\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{197CEAEB-6ABA-42E8-AB54-BF6DC5FD5E34}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\entities\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MenuController.cs",
-              "DocumentMoniker": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Controllers\\MenuController.cs",
+              "DocumentMoniker": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Controllers\\MenuController.cs",
               "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
-              "ToolTip": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Controllers\\MenuController.cs",
               "RelativeToolTip": "Controllers\\MenuController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -45,44 +45,37 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Usuario.cs",
+              "DocumentMoniker": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Usuario.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Usuario.cs",
-              "ToolTip": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Usuario.cs",
               "RelativeToolTip": "Data\\Entities\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T00:24:48.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T00:24:48.535Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Mesa.cs",
-              "DocumentMoniker": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Mesa.cs",
+              "DocumentMoniker": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Mesa.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Mesa.cs",
-              "ToolTip": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Mesa.cs",
+              "ToolTip": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Mesa.cs",
               "RelativeToolTip": "Data\\Entities\\Mesa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T00:24:44.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "WhenOpened": "2024-06-05T00:24:44.392Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Menu.cs",
-              "DocumentMoniker": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Menu.cs",
+              "DocumentMoniker": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Menu.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Menu.cs",
-              "ToolTip": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Menu.cs",
+              "ToolTip": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\Data\\Entities\\Menu.cs",
               "RelativeToolTip": "Data\\Entities\\Menu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T00:24:41.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T00:24:41.429Z"
             }
           ]
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "59uD8JIsnlo=",
+  "dgSpecHash": "7UOoiVu5OrQ=",
   "success": true,
-  "projectFilePath": "E:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\BusTicketsMonolitic.Web.csproj",
+  "projectFilePath": "C:\\BusMonoliticApp.WEb\\BusMonoliticApp.WEb\\BusTicketsMonolitic.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diazd\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\diazd\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
