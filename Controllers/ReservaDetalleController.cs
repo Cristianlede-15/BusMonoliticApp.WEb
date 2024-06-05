@@ -1,38 +1,37 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
-using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BusTicketsMonolitic.Web.Controllers
 {
-    public class ReservaController : Controller
+    public class ReservaDetalleController : Controller
     {
-        private readonly IReservaDb ReservaDb;
-        public ReservaController(IReservaDb ReservaDb)
+        private readonly IReservaDetalleDb ReservaDetalleDb;
+        public ReservaDetalleController(IReservaDetalleDb ReservaDetalleDb)
         {
-            this.ReservaDb = ReservaDb;
+            this.ReservaDetalleDb = ReservaDetalleDb;
         }
-        // GET: ReservaController
+        // GET: ReservaDetalleController
         public ActionResult Index()
         {
-            var Reserva = this.ReservaDb.GetReserva();
-            return View(Reserva);
+            var ReservaDetalle = this.ReservaDetalleDb.GetReservasDetalles();
+            return View(ReservaDetalle);
         }
 
-        // GET: ReservaController/Details/5
+        // GET: ReservaDetalleController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: ReservaController/Create
+        // GET: ReservaDetalleController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: ReservaController/Create
+        // POST: ReservaDetalleController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -47,13 +46,13 @@ namespace BusTicketsMonolitic.Web.Controllers
             }
         }
 
-        // GET: ReservaController/Edit/5
+        // GET: ReservaDetalleController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: ReservaController/Edit/5
+        // POST: ReservaDetalleController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -68,13 +67,13 @@ namespace BusTicketsMonolitic.Web.Controllers
             }
         }
 
-        // GET: ReservaController/Delete/5
+        // GET: ReservaDetalleController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: ReservaController/Delete/5
+        // POST: ReservaDetalleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

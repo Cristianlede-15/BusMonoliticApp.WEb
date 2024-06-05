@@ -1,6 +1,6 @@
-namespace BusMonoliticApp.Web.Data.Models
+﻿namespace BusTicketsMonolitic.Web.Data.Models.RutaModelDB
 {
-    public class RutaModel
+    public class RutaUpdateModel
     {
         public int IdRuta { get; set; }
         public string? Origen { get; set; }

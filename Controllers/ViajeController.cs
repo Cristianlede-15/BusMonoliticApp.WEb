@@ -6,33 +6,34 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BusTicketsMonolitic.Web.Controllers
 {
-    public class ReservaController : Controller
+    public class ViajeController : Controller
     {
-        private readonly IReservaDb ReservaDb;
-        public ReservaController(IReservaDb ReservaDb)
+        private readonly IViajeDb ViajeDb;
+        public ViajeController(IViajeDb ViajeDb)
         {
-            this.ReservaDb = ReservaDb;
+            this.ViajeDb = ViajeDb;
         }
-        // GET: ReservaController
+        // GET: ViajeController
         public ActionResult Index()
         {
-            var Reserva = this.ReservaDb.GetReserva();
-            return View(Reserva);
+
+            var Viaje = this.ViajeDb.GetViaje();
+            return View(Viaje);
         }
 
-        // GET: ReservaController/Details/5
+        // GET: ViajeController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: ReservaController/Create
+        // GET: ViajeController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: ReservaController/Create
+        // POST: ViajeController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -47,13 +48,13 @@ namespace BusTicketsMonolitic.Web.Controllers
             }
         }
 
-        // GET: ReservaController/Edit/5
+        // GET: ViajeController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: ReservaController/Edit/5
+        // POST: ViajeController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -68,13 +69,13 @@ namespace BusTicketsMonolitic.Web.Controllers
             }
         }
 
-        // GET: ReservaController/Delete/5
+        // GET: ViajeController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: ReservaController/Delete/5
+        // POST: ViajeController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
