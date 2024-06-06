@@ -1,13 +1,22 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BusMonoliticApp.Web.Data.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BusTicketsMonolitic.Web.Controllers
 {
     public class UsuarioController : Controller
     {
+        private readonly IMenuDb menuDb;
+
+        public UsuarioController(IMenuDb MenuDb)
+        {
+            menuDb = MenuDb;
+        }
+
         // GET: UsuarioController
         public ActionResult Index()
         {
+            this.menuDb.GetMenu();
             return View();
         }
 

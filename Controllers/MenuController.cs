@@ -1,4 +1,7 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
+using BusMonoliticApp.Web.Data.DbObjects;
+using BusMonoliticApp.Web.Data.Entities;
+using BusMonoliticApp.Web.Data.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -7,17 +10,18 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class MenuController : Controller
     {
-        private readonly BoletosBusContext context;
+        private readonly IMenuDb MenuDb;
 
-        public MenuController(BoletosBusContext context)
+        public MenuController(IMenuDb MenuDb)
         {
-            this.context = context;
+            this.MenuDb = MenuDb;
         }
         // GET: MenuController
         public ActionResult Index()
         {
+            var Menu = this.MenuDb.GetMenu();
             
-            return View();
+            return View(Menu);
         }
 
         // GET: MenuController/Details/5
