@@ -1,7 +1,9 @@
 using BusMonoliticApp.Web.Data.Context;
+using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
-using BusTicketsMonolitic.Web.Data.Models;
-using BusTicketsMonolitic.Web.Data.Models.ViajeModelDb;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.Web.Data.Models.ViajeModelDb;
+
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {
@@ -15,27 +17,106 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteViaje(ViajeDeleteModel viajeDeleteModel)
         {
-            throw new NotImplementedException();
+            var viaje = context.Viaje.FirstOrDefault(v => v.Id == viajeDeleteModel.IdViaje);
+
+            if (viaje != null)
+            {
+                context.Viaje.Remove(viaje);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new ArgumentException("El viaje especificado no existe.");
+            }
         }
 
         public List<ViajeModelAccess> GetViaje()
         {
-            throw new NotImplementedException();
+            var viajesEntities = context.Viaje.ToList();
+            var viajesModelAccess = viajesEntities.Select(viajeEntity => new ViajeModelAccess
+            {
+                IdViaje = viajeEntity.Id,
+                IdBus = viajeEntity.IdBus,
+                IdRuta = viajeEntity.IdRuta,
+                FechaSalida = viajeEntity.FechaSalida,
+                HoraSalida = viajeEntity.HoraSalida,
+                FechaLlegada = viajeEntity.FechaLlegada,
+                HoraLlegada = viajeEntity.HoraLlegada,
+                Precio = viajeEntity.Precio,
+                TotalAsientos = viajeEntity.TotalAsientos,
+                AsientosReservados = viajeEntity.AsientosReservados
+            }).ToList();
+
+            return viajesModelAccess;
         }
 
         public ViajeModelAccess GetViaje(int IdViaje)
         {
-            throw new NotImplementedException();
+            var viajeEntity = context.Viaje.FirstOrDefault(v => v.Id == IdViaje);
+
+            if (viajeEntity != null)
+            {
+                return new ViajeModelAccess
+                {
+                    IdViaje = viajeEntity.Id,
+                    IdBus = viajeEntity.IdBus,
+                    IdRuta = viajeEntity.IdRuta,
+                    FechaSalida = viajeEntity.FechaSalida,
+                    HoraSalida = viajeEntity.HoraSalida,
+                    FechaLlegada = viajeEntity.FechaLlegada,
+                    HoraLlegada = viajeEntity.HoraLlegada,
+                    Precio = viajeEntity.Precio,
+                    TotalAsientos = viajeEntity.TotalAsientos,
+                    AsientosReservados = viajeEntity.AsientosReservados
+                };
+            }
+
+            return null!;
         }
 
         public void SaveViaje(ViajeSaveModel viajeSaveModel)
         {
-            throw new NotImplementedException();
+            var viaje = new Viaje
+            {
+                IdBus = viajeSaveModel.IdBus,
+                IdRuta = viajeSaveModel.IdRuta,
+                FechaSalida = viajeSaveModel.FechaSalida,
+                HoraSalida = viajeSaveModel.HoraSalida,
+                FechaLlegada = viajeSaveModel.FechaLlegada,
+                HoraLlegada = viajeSaveModel.HoraLlegada,
+                Precio = viajeSaveModel.Precio,
+                TotalAsientos = viajeSaveModel.TotalAsientos,
+                AsientosReservados = viajeSaveModel.AsientosReservados,
+                FechaCreacion = viajeSaveModel.FechaCreacion ?? DateTime.Now
+            };
+
+            context.Viaje.Add(viaje);
+            context.SaveChanges();
         }
 
         public void UpdateViaje(ViajeUpdateModel viajeUpdateModel)
         {
-            throw new NotImplementedException();
+            var viaje = context.Viaje.FirstOrDefault(v => v.Id == viajeUpdateModel.IdViaje);
+
+            if (viaje != null)
+            {
+                viaje.IdBus = viajeUpdateModel.IdBus;
+                viaje.IdRuta = viajeUpdateModel.IdRuta;
+                viaje.FechaSalida = viajeUpdateModel.FechaSalida;
+                viaje.HoraSalida = viajeUpdateModel.HoraSalida;
+                viaje.FechaLlegada = viajeUpdateModel.FechaLlegada;
+                viaje.HoraLlegada = viajeUpdateModel.HoraLlegada;
+                viaje.Precio = viajeUpdateModel.Precio;
+                viaje.TotalAsientos = viajeUpdateModel.TotalAsientos;
+                viaje.AsientosReservados = viajeUpdateModel.AsientosReservados;
+                viaje.FechaCreacion = viajeUpdateModel.FechaCreacion ?? viaje.FechaCreacion;
+
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new ArgumentException("El viaje especificado no existe.");
+            }
         }
     }
 }

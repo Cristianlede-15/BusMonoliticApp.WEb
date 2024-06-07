@@ -1,4 +1,4 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models.RutaModelDB
+﻿namespace BusMonoliticApp.Web.Data.Models.RutaModelDB
 {
     public class RutaSaveModel
     {

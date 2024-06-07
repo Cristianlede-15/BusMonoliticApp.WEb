@@ -1,4 +1,4 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models.ViajeModelDb
+﻿namespace BusMonoliticApp.Web.Data.Models.ViajeModelDb
 {
     public class ViajeUpdateModel
     {

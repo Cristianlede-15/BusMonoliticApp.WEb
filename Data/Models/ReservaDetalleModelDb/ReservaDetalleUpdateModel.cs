@@ -1,4 +1,4 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models.ReservaDetalleModelDb
+﻿namespace BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb
 {
     public class ReservaDetalleUpdateModel
     {

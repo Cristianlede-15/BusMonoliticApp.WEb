@@ -1,5 +1,6 @@
-using BusTicketsMonolitic.Web.Data.Models;
-using BusTicketsMonolitic.Web.Data.Models.RutaModelDB;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.Web.Data.Models.RutaModelDB;
+
 
 namespace BusMonoliticApp.Web.Data.Interfaces
 {
@@ -9,6 +10,6 @@ namespace BusMonoliticApp.Web.Data.Interfaces
         void UpdateRuta(RutaUpdateModel updateModel);
         void DeleteRuta(RutaDeleteModel deleteModel);
         List<RutaModelAccess> GetRutas();
-        RutaModelAccess GetRutas(int idRuta);
+        RutaModelAccess GetRutas(int IdRuta);
     }
 }

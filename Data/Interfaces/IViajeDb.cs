@@ -1,5 +1,6 @@
-using BusTicketsMonolitic.Web.Data.Models;
-using BusTicketsMonolitic.Web.Data.Models.ViajeModelDb;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.Web.Data.Models.ViajeModelDb;
+
 
 namespace BusMonoliticApp.Web.Data.Interfaces
 {

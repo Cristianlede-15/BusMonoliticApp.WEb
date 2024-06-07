@@ -1,10 +1,10 @@
-namespace BusTicketsMonolitic.Web.Data.Models
+namespace BusMonoliticApp.Web.Data.Models
 {
     public class ViajeModelAccess
     {
         public int IdViaje { get; set; }
         public int? IdBus { get; set; }
-        public int? idRuta { get; set; }
+        public int? IdRuta { get; set; }
         public DateTime? FechaSalida { get; set; }
         public TimeSpan? HoraSalida { get; set; }
         public DateTime? FechaLlegada { get; set; }
@@ -14,5 +14,6 @@ namespace BusTicketsMonolitic.Web.Data.Models
         public int? AsientosReservados { get; set; }
         public int AsientoDisponibles => (TotalAsientos ?? 0) - (AsientosReservados ?? 0);
         public bool Completo => AsientoDisponibles < 1;
+        public DateTime? FechaCreacion { get; set; }  
     }
 }

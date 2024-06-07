@@ -1,11 +1,10 @@
-namespace BusTicketsMonolitic.Web.Data.Models
+namespace BusMonoliticApp.Web.Data.Models
 {
     public class ReservaDetalleModelAccess
     {
-        public int IdResarvaDetalles { get; set; }
-        public int IdReserva { get; set; }
-        public int IdAsiento { get; set; }
-        public DateTime? FechaCreacion { get; set; }
-
+        public int IdResarvaDetalle { get; set; }
+        public int? IdReserva { get; set; }
+        public int? IdAsiento { get; set; }
+        public DateTime? FechaCreacion { get; set; }  
     }
 }

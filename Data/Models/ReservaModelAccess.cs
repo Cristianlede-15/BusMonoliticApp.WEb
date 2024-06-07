@@ -1,4 +1,4 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models
+﻿namespace BusMonoliticApp.Web.Data.Models
 {
     public class ReservaModelAccess
     {

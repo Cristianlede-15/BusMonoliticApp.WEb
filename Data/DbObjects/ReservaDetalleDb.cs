@@ -1,7 +1,9 @@
 using BusMonoliticApp.Web.Data.Context;
+using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
-using BusTicketsMonolitic.Web.Data.Models;
-using BusTicketsMonolitic.Web.Data.Models.ReservaDetalleModelDb;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
+using Microsoft.EntityFrameworkCore;
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {
@@ -15,27 +17,68 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteReservaDetalle(ReservaDetalleDeleteModel reservaDetalleDeleteModel)
         {
-            throw new NotImplementedException();
+            var reservaDetalle = context.ReservaDetalle.Find(reservaDetalleDeleteModel.IdResarvaDetalle);
+            if (reservaDetalle != null)
+            {
+                context.ReservaDetalle.Remove(reservaDetalle);
+                context.SaveChanges();
+            }
         }
 
-        public ReservaDetalleModelAccess GetReservaDetalle(int idReserva)
+        public ReservaDetalleModelAccess GetReservaDetalle(int idReservaDetalle)
         {
-            throw new NotImplementedException();
+            var reservaDetalle = context.ReservaDetalle.Find(idReservaDetalle);
+            if (reservaDetalle != null)
+            {
+                return new ReservaDetalleModelAccess
+                {
+                    IdResarvaDetalle = reservaDetalle.Id,
+                    IdReserva = reservaDetalle.IdReserva,
+                    IdAsiento = reservaDetalle.IdAsiento,
+                    FechaCreacion = reservaDetalle.FechaCreacion
+                };
+            }
+            return null!;
+            
         }
 
         public List<ReservaDetalleModelAccess> GetReservasDetalles()
         {
-            throw new NotImplementedException();
+            return context.ReservaDetalle
+                          .Select(rd => new ReservaDetalleModelAccess
+                          {
+                              IdResarvaDetalle = rd.Id,
+                              IdReserva = rd.IdReserva,
+                              IdAsiento = rd.IdAsiento,
+                              FechaCreacion = rd.FechaCreacion
+                          }).ToList();
         }
 
-        public void SaveReservaDetalle(ReservaDetalleDeleteModel reservaDetalleDeleteModel)
+        public void SaveReservaDetalle(ReservaDetalleSaveModel reservaDetalleSaveModel)
         {
-            throw new NotImplementedException();
+            var reservaDetalle = new ReservaDetalle
+            {
+                IdReserva = reservaDetalleSaveModel.IdReserva,
+                IdAsiento = reservaDetalleSaveModel.IdAsiento,
+                FechaCreacion = reservaDetalleSaveModel.FechaCreacion ?? DateTime.Now
+            };
+
+            context.ReservaDetalle.Add(reservaDetalle);
+            context.SaveChanges();
         }
 
         public void UpdateReservaDetalle(ReservaDetalleUpdateModel reservaDetalleUpdateModel)
         {
-            throw new NotImplementedException();
+            var reservaDetalle = context.ReservaDetalle.Find(reservaDetalleUpdateModel.IdReservaDetalle);
+            if (reservaDetalle != null)
+            {
+                reservaDetalle.IdReserva = reservaDetalleUpdateModel.IdReserva;
+                reservaDetalle.IdAsiento = reservaDetalleUpdateModel.IdAsiento;
+                reservaDetalle.FechaCreacion = reservaDetalleUpdateModel.FechaCreacion ?? reservaDetalle.FechaCreacion;
+
+                context.ReservaDetalle.Update(reservaDetalle);
+                context.SaveChanges();
+           }    
         }
     }
 }
