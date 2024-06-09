@@ -3,70 +3,96 @@ using System.Collections.Generic;
 using System.Linq;
 using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
-using BusTicketsMonolitic.Web.Data.DbObjects.Dataconsultation;
 using BusTicketsMonolitic.Web.Data.Exceptions;
+using BusTicketsMonolitic.Web.Data.Interfaces;
 using BusTicketsMonolitic.Web.Data.Models;
 using BusTicketsMonolitic.Web.Data.Models.BusModelsDb;
+using BusTicketsMonolitic.Web.Data.Models.ClienteModelsDb;
 
 namespace BusTicketsMonolitic.Web.Data.DbObjects
 {
-    public class BusDb : ClaseBaseConsultas<Bus, BusModelsAccess, int>
+    public class BusDb : IBusDb
     {
-        public BusDb(BoletosBusContext context) : base(context) { }
+        private readonly BoletosBusContext context;
 
-        public override void Delete(int idBus)
+        public BusDb(BoletosBusContext context)
         {
-            var busEliminar = context.Bus.Find(idBus);
-            if (busEliminar != null)
-            {
-                context.Bus.Remove(busEliminar);
-                context.SaveChanges();
-            }
-            else
-            {
-                throw new BusDbException($"No se pudo encontrar el bus con Id: {idBus} para eliminar...");
-            }
+            this.context = context;
         }
 
-        public override List<BusModelsAccess> GetAll()
+        public void DeleteBus(BusDeleteModel busDeleteModel)
         {
             try
             {
-                return context.Bus.Select(bus => new BusModelsAccess()
+                var busEliminar = this.context.Bus.Find(busDeleteModel.IdBus);
+
+                if (busEliminar != null)
                 {
-                    IdBus = bus.IdBus,
+                    this.context.Bus.Remove(busEliminar);
+                    this.context.SaveChanges();
+                }
+                else
+                {
+                    throw new BusDbException($"No se pudo encontrar el bus con Id: {busDeleteModel.IdBus} para eliminar...");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BusDbException("Error al intentar eliminar el bus...", ex);
+            }
+        }
+
+        public List<BusModelsAccess> GetBus()
+        {
+            try
+            {
+                return this.context.Bus.Select(bus => new BusModelsAccess()
+                {
+                    IdBus = bus.Id,
                     NumeroPlaca = bus.NumeroPlaca,
-                    CapacidadTotal = (int)bus.CapacidadTotal,
-                    Disponible = (bool)bus.Disponible
+                    Nombre = bus.Nombre,
+                    CapacidadTotal = (int)bus.CapacidadTotal
                 }).ToList();
             }
             catch (Exception ex)
             {
-                throw new BusDbException("Error al querer encontar todos los buses...", ex);
+                throw new BusDbException("Error, no se pudieron obtener todos los buses...", ex);
             }
         }
 
-        public override BusModelsAccess GetById(int idBus)
+        public BusModelsAccess GetBus(int IdBus)
         {
-            var bus = context.Bus.Find(idBus);
+            var bus = this.context.Bus.Find(IdBus);
             if (bus == null)
             {
-                throw new BusDbException($"No se pudo encontar el bus con Id: {idBus}...");
+                throw new BusDbException($"No se pudo encontrar el bus con Id: {IdBus}...");
             }
 
             return new BusModelsAccess()
             {
-                IdBus = bus.IdBus,
+                IdBus = bus.Id,
                 NumeroPlaca = bus.NumeroPlaca,
-                Disponible = (bool)bus.Disponible
+                Nombre = bus.Nombre,
+                CapacidadTotal = (int)bus.CapacidadTotal
             };
         }
 
-        public override void Save(Bus bus)
+        public void SaveBus(BusSaveModel busSaveModel)
         {
             try
             {
-                context.Bus.Add(bus);
+                var nuevoBus = new Bus
+                {
+                    IdBus = busSaveModel.IdBus,
+                    NumeroPlaca = busSaveModel.NumeroPlaca,
+                    Nombre = busSaveModel.Nombre,
+                    CapacidadPiso1 = busSaveModel.CapacidadPiso1,
+                    CapacidadPiso2 = busSaveModel.CapacidadPiso2,
+                    FechaCreacion = busSaveModel.FechaCreacion
+
+                };
+
+                context.Bus.Add(nuevoBus);
                 context.SaveChanges();
             }
             catch (Exception ex)
@@ -75,11 +101,26 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
             }
         }
 
-        public override void Update(Bus bus)
+        public void UpdateBus(BusUpdateModel busUpdateModel)
         {
             try
             {
-                context.Bus.Update(bus);
+                var busExistente = context.Bus.Find(busUpdateModel.IdBus);
+
+                if (busExistente == null)
+                {
+                    throw new BusDbException($"No se encontró el bus con Id: {busUpdateModel.IdBus} para actualizar...");
+                }
+
+                busExistente.Nombre = busUpdateModel.Nombre;
+                busExistente.IdBus = busUpdateModel.IdBus;
+                busExistente.Nombre = busUpdateModel.Nombre;
+                busExistente.CapacidadPiso1 = busUpdateModel.CapacidadPiso1;
+                busExistente.CapacidadPiso2 = busUpdateModel.CapacidadPiso2;
+                busExistente.FechaCreacion = busUpdateModel.FechaModificacion;
+
+
+
                 context.SaveChanges();
             }
             catch (Exception ex)

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\models\\busmodelsdb\\busupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\busmodelsdb\\busupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\data\\dbobjects\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,35 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BusUpdateModel.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Models\\BusModelsDb\\BusUpdateModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\BusModelsDb\\BusUpdateModel.cs",
-              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\Models\\BusModelsDb\\BusUpdateModel.cs",
-              "RelativeToolTip": "Data\\Models\\BusModelsDb\\BusUpdateModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T20:38:10.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\Cliente.cs",
-              "RelativeDocumentMoniker": "Data\\DbObjects\\Cliente.cs",
-              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Data\\DbObjects\\Cliente.cs",
-              "RelativeToolTip": "Data\\DbObjects\\Cliente.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAkwFcAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T20:36:43.019Z",
-              "EditorCaption": ""
-            }
-          ]
+          "SelectedChildIndex": -1,
+          "Children": []
         }
       ]
     }
