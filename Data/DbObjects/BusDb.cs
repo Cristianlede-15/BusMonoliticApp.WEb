@@ -5,7 +5,6 @@ using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusTicketsMonolitic.Web.Data.Exceptions;
 using BusTicketsMonolitic.Web.Data.Interfaces;
-using BusTicketsMonolitic.Web.Data.Models;
 using BusTicketsMonolitic.Web.Data.Models.BusModelsDb;
 using BusTicketsMonolitic.Web.Data.Models.ClienteModelsDb;
 
@@ -48,7 +47,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
             {
                 return this.context.Bus.Select(bus => new BusModelsAccess()
                 {
-                    IdBus = bus.Id,
+                    IdBus = bus.IdBus,
                     NumeroPlaca = bus.NumeroPlaca,
                     Nombre = bus.Nombre,
                     CapacidadTotal = (int)bus.CapacidadTotal
@@ -70,7 +69,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
 
             return new BusModelsAccess()
             {
-                IdBus = bus.Id,
+                IdBus = bus.IdBus,
                 NumeroPlaca = bus.NumeroPlaca,
                 Nombre = bus.Nombre,
                 CapacidadTotal = (int)bus.CapacidadTotal
@@ -88,7 +87,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
                     Nombre = busSaveModel.Nombre,
                     CapacidadPiso1 = busSaveModel.CapacidadPiso1,
                     CapacidadPiso2 = busSaveModel.CapacidadPiso2,
-                    FechaCreacion = busSaveModel.FechaCreacion
+                    FechaCreacion = (DateTime)busSaveModel.FechaCreacion
 
                 };
 
@@ -117,7 +116,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
                 busExistente.Nombre = busUpdateModel.Nombre;
                 busExistente.CapacidadPiso1 = busUpdateModel.CapacidadPiso1;
                 busExistente.CapacidadPiso2 = busUpdateModel.CapacidadPiso2;
-                busExistente.FechaCreacion = busUpdateModel.FechaModificacion;
+                busExistente.FechaCreacion = (DateTime)busUpdateModel.FechaModificacion;
 
 
 

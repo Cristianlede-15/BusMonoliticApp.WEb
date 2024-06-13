@@ -1,8 +1,6 @@
 ﻿namespace BusTicketsMonolitic.Web.Data.Models.ClienteModelsDb
 {
-    public class ClienteDeleteModel
+    public class ClienteDeleteModel : ClienteBaseModel
     {
-        public int IdCliente { get; set; }
-        public string? Telefono { get; set; }
     }
 }

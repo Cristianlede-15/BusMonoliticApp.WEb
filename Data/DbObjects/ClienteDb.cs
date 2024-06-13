@@ -5,7 +5,6 @@ using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusTicketsMonolitic.Web.Data.Exceptions;
 using BusTicketsMonolitic.Web.Data.Interfaces;
-using BusTicketsMonolitic.Web.Data.Models;
 using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
 using BusTicketsMonolitic.Web.Data.Models.ClienteModelsDb;
 
@@ -48,7 +47,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
             {
                 return this.context.Cliente.Select(cliente => new ClienteModelsAccess()
                 {
-                    IdCliente = cliente.Id,
+                    IdCliente = cliente.IdCliente,
                     Nombre = cliente.Nombre,
                     Telefono = cliente.Telefono,
                     Email = cliente.Email

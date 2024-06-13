@@ -1,12 +1,14 @@
-﻿using BusMonoliticApp.Web.Data.Core;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace BusMonoliticApp.Web.Data.Entities
 {
-    public class Cliente : BaseEntity
+    public class Cliente
     {
-        public string? Nombre {  get; set; }
-        public string? Telefono {  get; set; }  
+        [Key]
+        public int IdCliente { get; set; }
+        public string? Nombre { get; set; }
+        public string? Telefono { get; set; }
         public string? Email { get; set; }
-        public object IdCliente { get; internal set; }
     }
 }

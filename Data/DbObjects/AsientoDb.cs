@@ -5,8 +5,8 @@ using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusTicketsMonolitic.Web.Data.Exceptions;
 using BusTicketsMonolitic.Web.Data.Interfaces;
-using BusTicketsMonolitic.Web.Data.Models;
 using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
+using BusTicketsMonolitic.Web.Data.Models.AsientoModelsDb;
 
 namespace BusTicketsMonolitic.Web.Data.DbObjects
 {
@@ -49,6 +49,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
             {
                 return this.context.Asiento.Select(asiento => new AsientoModelsAccess()
                 {
+                    IdAsiento = asiento.IdAsiento,
                     IdBus = (int)asiento.IdBus,
                     NumeroPiso = asiento.NumeroPiso,
                     NumeroAsiento = (int)asiento.NumeroAsiento,
@@ -111,7 +112,7 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
                 asientoExistente.IdBus = asientoUpdateModel.IdBus;
                 asientoExistente.NumeroPiso = asientoUpdateModel.NumeroPiso;
                 asientoExistente.NumeroAsiento = asientoUpdateModel.NumeroAsiento;
-                asientoExistente.FechaModificacion = asientoUpdateModel.FechaModificacion;
+                asientoExistente.FechaModificacion = (DateTime)asientoUpdateModel.FechaModificacion;
 
                 this.context.Asiento.Update(asientoExistente);
                 this.context.SaveChanges();

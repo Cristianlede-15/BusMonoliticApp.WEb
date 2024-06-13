@@ -1,6 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Entities;
-using BusTicketsMonolitic.Web.Data.Models;
 using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
+using BusTicketsMonolitic.Web.Data.Models.AsientoModelsDb;
 
 namespace BusTicketsMonolitic.Web.Data.Interfaces
 {

@@ -1,8 +1,10 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models.AsientoModels
+﻿using BusTicketsMonolitic.Web.Data.Models.AsientoModelsDb;
+
+namespace BusTicketsMonolitic.Web.Data.Models.AsientoModels
 {
-    public class AsientoDeleteModel
+    public class AsientoDeleteModel : AsientoBaseModel
     {
-        public int IdAsiento { get; set; }
+
 
         public DateTime? FechaEliminacion { get; set; }
     }

@@ -18,5 +18,7 @@ namespace BusMonoliticApp.Web.Data.Context
         public DbSet<Bus> Bus { get; set; }
         public DbSet<Cliente> Cliente { get; set; }
         #endregion
+
+
     }
 }

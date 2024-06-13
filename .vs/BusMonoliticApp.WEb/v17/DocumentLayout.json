@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\bus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\bus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\bus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\bus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\asiento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\asiento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\asiento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\asiento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|c:\\users\\pc\\onedrive\\escritorio\\busmonoliticapp.web\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C249B8D-D13C-43BE-9227-2104E0DC8F7B}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +54,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:14:11.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:13:19.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:13:15.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:13:13.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Create.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Create.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Create.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAwAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:12:23.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Edit.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAIBJwAwAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:09:44.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Asiento\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asiento\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Asiento\\Index.cshtml",
+              "RelativeToolTip": "Views\\Asiento\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:09:38.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAIBJwCgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:08:42.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Bus\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bus\\Create.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Bus\\Create.cshtml",
+              "RelativeToolTip": "Views\\Bus\\Create.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:08:07.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Bus\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bus\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Bus\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bus\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:07:24.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Asiento\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asiento\\Create.cshtml",
+              "ToolTip": "C:\\Users\\pc\\OneDrive\\Escritorio\\BusMonoliticApp.WEb\\Views\\Asiento\\Create.cshtml",
+              "RelativeToolTip": "Views\\Asiento\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T00:05:51.218Z",
+              "EditorCaption": ""
+            }
+          ]
         }
       ]
     }

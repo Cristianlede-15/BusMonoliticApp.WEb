@@ -1,9 +1,10 @@
-﻿namespace BusTicketsMonolitic.Web.Data.Models.AsientoModels
+﻿using BusTicketsMonolitic.Web.Data.Models.AsientoModelsDb;
+
+namespace BusTicketsMonolitic.Web.Data.Models.AsientoModels
 {
-    public class AsientoUpdateModel
+    public class AsientoUpdateModel : AsientoBaseModel
     {
-        public int IdAsiento { get; set; }
-        public int IdBus { get; set; }
+
         public int? NumeroPiso { get; set; }
         public int? NumeroAsiento { get; set; }
         public DateTime? FechaModificacion { get; set; }

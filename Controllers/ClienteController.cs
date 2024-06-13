@@ -1,4 +1,5 @@
 ﻿using BusTicketsMonolitic.Web.Data.Interfaces;
+using BusTicketsMonolitic.Web.Data.Models.ClienteModelsDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,13 +18,14 @@ namespace BusTicketsMonolitic.Web.Controllers
         public ActionResult Index()
         {
             var clientes = this.clienteDb.GetClientes();
-            return View();
+            return View(clientes);
         }
 
         // GET: ClienteController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var clientes = this.clienteDb.GetClientes(id);
+            return View(clientes);
         }
 
         // GET: ClienteController/Create
@@ -35,10 +37,11 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: ClienteController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ClienteSaveModel clienteSave)
         {
             try
             {
+                this.clienteDb.SaveCliente(clienteSave);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -50,13 +53,14 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ClienteController/Edit/5
         public ActionResult Edit(int id)
         {
+            var cliente = this.clienteDb.GetClientes(id);
             return View();
         }
 
         // POST: ClienteController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(ClienteUpdateModel clienteUpdate)
         {
             try
             {

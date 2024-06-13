@@ -1,6 +1,5 @@
-﻿using BusMonoliticApp.Web.Data.Context;
-using BusTicketsMonolitic.Web.Data.DbObjects;
-using BusTicketsMonolitic.Web.Data.Interfaces;
+﻿using BusTicketsMonolitic.Web.Data.Interfaces;
+using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,19 +14,18 @@ namespace BusTicketsMonolitic.Web.Controllers
             this.asientoDb = asientoDb;
         }
 
-
-        //------------------------
         // GET: AsientoController
         public ActionResult Index()
         {
             var asientos = this.asientoDb.GetAsientos();
-            return View();
+            return View(asientos);
         }
 
         // GET: AsientoController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var asiento = this.asientoDb.GetAsientos(id);
+            return View(asiento);
         }
 
         // GET: AsientoController/Create
@@ -39,10 +37,11 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: AsientoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(AsientoSaveModel asientoSave)
         {
             try
             {
+                this.asientoDb.SaveAsiento(asientoSave);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -54,16 +53,18 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: AsientoController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var asiento = this.asientoDb.GetAsientos(id);
+            return View(asiento);
         }
 
         // POST: AsientoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(AsientoUpdateModel asientoUpdate)
         {
             try
             {
+                asientoUpdate.FechaModificacion = DateTime.Now;
                 return RedirectToAction(nameof(Index));
             }
             catch

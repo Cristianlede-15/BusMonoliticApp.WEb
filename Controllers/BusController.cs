@@ -1,4 +1,5 @@
 ﻿using BusTicketsMonolitic.Web.Data.Interfaces;
+using BusTicketsMonolitic.Web.Data.Models.BusModelsDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,14 +16,15 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: BusController
         public ActionResult Index()
         {
-            var bus = this.busDb.GetBus();
-            return View();
+            var buses = this.busDb.GetBus();
+            return View(buses);
         }
 
         // GET: BusController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var bus = this.busDb.GetBus(id);
+            return View(bus);
         }
 
         // GET: BusController/Create
@@ -34,10 +36,11 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: BusController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(BusSaveModel busSave)
         {
             try
             {
+                this.busDb.SaveBus(busSave);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -49,16 +52,18 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: BusController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var bus = this.busDb.GetBus(id);
+            return View(bus);
         }
 
         // POST: BusController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(BusUpdateModel busUpdate)
         {
             try
             {
+                busUpdate.FechaModificacion = DateTime.Now;
                 return RedirectToAction(nameof(Index));
             }
             catch
