@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BoletosBusContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BoletoBusContext")));
 builder.Services.AddScoped<IReservaDb, ReservaDb> ();
+builder.Services.AddScoped<IReservaDetalleDb, ReservaDetalleDb> ();
 
 var app = builder.Build();
 
