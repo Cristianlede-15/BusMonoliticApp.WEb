@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BL",
+    "\\BL\\Services",
+    "\\Controllers",
+    "\\Data",
+    "\\Data\\Context",
+    "\\Data\\Core",
+    "\\Data\\DbObjects",
+    "\\Data\\Exceptions",
+    "\\Data\\Models"
+  ],
+  "PreviewInSolutionExplorer": false
+}
