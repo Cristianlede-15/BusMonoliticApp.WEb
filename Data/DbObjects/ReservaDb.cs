@@ -1,8 +1,8 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
-using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
+using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
 
 
 namespace BusMonoliticApp.Web.Data.DbObjects
@@ -30,7 +30,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             return context.Reserva
                           .Select(r => new ReservaModelAccess
                           {
-                              IdReserva = r.Id,
+                              IdReserva = r.IdReserva,
                               IdViaje = r.IdViaje,
                               IdPasajero = r.IdPasajero,
                               AsientosReservados = r.AsientosReservados,
@@ -46,7 +46,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             {
                 return new ReservaModelAccess
                 {
-                    IdReserva = reserva.Id,
+                    IdReserva = reserva.IdReserva,
                     IdViaje = reserva.IdViaje,
                     IdPasajero = reserva.IdPasajero,
                     AsientosReservados = reserva.AsientosReservados,

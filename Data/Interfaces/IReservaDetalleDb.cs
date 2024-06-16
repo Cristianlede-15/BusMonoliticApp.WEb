@@ -1,5 +1,5 @@
-using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
+using BusTicketsMonolitic.Web.Data.Models.ReservaDetalle;
 
 
 namespace BusMonoliticApp.Web.Data.Interfaces

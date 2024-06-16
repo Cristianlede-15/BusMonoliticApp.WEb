@@ -8,6 +8,7 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class ReservaController : Controller
     {
+
         private readonly IReservaDb ReservaDb;
         public ReservaController(IReservaDb ReservaDb)
         {

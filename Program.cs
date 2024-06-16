@@ -1,7 +1,14 @@
+using BusMonoliticApp.Web.Data.Context;
+using BusMonoliticApp.Web.Data.DbObjects;
+using BusMonoliticApp.Web.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<BoletosBusContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BoletoBusContext")));
+builder.Services.AddScoped<IReservaDb, ReservaDb> ();
 
 var app = builder.Build();
 

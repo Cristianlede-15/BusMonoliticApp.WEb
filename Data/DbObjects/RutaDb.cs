@@ -1,8 +1,8 @@
 using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
-using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.Web.Data.Models.RutaModelDB;
+using BusTicketsMonolitic.Web.Data.Models.Ruta;
 
 
 namespace BusMonoliticApp.Web.Data.DbObjects

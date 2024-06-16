@@ -1,8 +1,8 @@
 using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
-using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
+using BusTicketsMonolitic.Web.Data.Models.ReservaDetalle;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusMonoliticApp.Web.Data.DbObjects
@@ -25,14 +25,14 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             }
         }
 
-        public ReservaDetalleModelAccess GetReservaDetalle(int idReservaDetalle)
+        public ReservaDetalleModelAccess GetReservaDetalle(int IdReservaDetalle)
         {
-            var reservaDetalle = context.ReservaDetalle.Find(idReservaDetalle);
+            var reservaDetalle = context.ReservaDetalle.Find(IdReservaDetalle);
             if (reservaDetalle != null)
             {
                 return new ReservaDetalleModelAccess
                 {
-                    IdResarvaDetalle = reservaDetalle.Id,
+                    IdResarvaDetalle = reservaDetalle.IdReservaDetalle,
                     IdReserva = reservaDetalle.IdReserva,
                     IdAsiento = reservaDetalle.IdAsiento,
                     FechaCreacion = reservaDetalle.FechaCreacion
@@ -47,7 +47,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             return context.ReservaDetalle
                           .Select(rd => new ReservaDetalleModelAccess
                           {
-                              IdResarvaDetalle = rd.Id,
+                              IdResarvaDetalle = rd.IdReservaDetalle,
                               IdReserva = rd.IdReserva,
                               IdAsiento = rd.IdAsiento,
                               FechaCreacion = rd.FechaCreacion
