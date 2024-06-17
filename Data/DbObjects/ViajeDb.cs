@@ -17,7 +17,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteViaje(ViajeDeleteModel viajeDeleteModel)
         {
-            var viaje = context.Viaje.FirstOrDefault(v => v.Id == viajeDeleteModel.IdViaje);
+            var viaje = context.Viaje.FirstOrDefault(v => v.IdViaje == viajeDeleteModel.IdViaje);
 
             if (viaje != null)
             {
@@ -35,7 +35,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             var viajesEntities = context.Viaje.ToList();
             var viajesModelAccess = viajesEntities.Select(viajeEntity => new ViajeModelAccess
             {
-                IdViaje = viajeEntity.Id,
+                IdViaje = viajeEntity.IdViaje,
                 IdBus = viajeEntity.IdBus,
                 IdRuta = viajeEntity.IdRuta,
                 FechaSalida = viajeEntity.FechaSalida,
@@ -52,13 +52,13 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public ViajeModelAccess GetViaje(int IdViaje)
         {
-            var viajeEntity = context.Viaje.FirstOrDefault(v => v.Id == IdViaje);
+            var viajeEntity = context.Viaje.FirstOrDefault(v => v.IdViaje == IdViaje);
 
             if (viajeEntity != null)
             {
                 return new ViajeModelAccess
                 {
-                    IdViaje = viajeEntity.Id,
+                    IdViaje = viajeEntity.IdViaje,
                     IdBus = viajeEntity.IdBus,
                     IdRuta = viajeEntity.IdRuta,
                     FechaSalida = viajeEntity.FechaSalida,
@@ -96,7 +96,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public void UpdateViaje(ViajeUpdateModel viajeUpdateModel)
         {
-            var viaje = context.Viaje.FirstOrDefault(v => v.Id == viajeUpdateModel.IdViaje);
+            var viaje = context.Viaje.FirstOrDefault(v => v.IdViaje == viajeUpdateModel.IdViaje);
 
             if (viaje != null)
             {

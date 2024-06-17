@@ -2,8 +2,8 @@
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
+using BusTicketsMonolitic.Web.Data.Models.Reserva;
 using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
-
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {
@@ -15,51 +15,40 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         {
             this.context = context;
         }
-        void IReservaDb.DeleteReserva(ReservaDeleteModel ReservaDeleteModel)
+
+        public List<ReservaModelAccess> GetReserva()
         {
-            var reserva = context.Reserva.Find(ReservaDeleteModel.IdReserva);
-            if (reserva != null)
+            return this.context.Reserva.Select(r => new ReservaModelAccess()
             {
-                context.Reserva.Remove(reserva);
-                context.SaveChanges();
-            }
+                IdReserva = r.IdReserva,
+                IdViaje = r.IdViaje,
+                IdPasajero = r.IdPasajero,
+                AsientosReservados = r.AsientosReservados,
+                MontoTotal = r.MontoTotal,
+                FechaCreacion = r.FechaCreacion
+
+            }).ToList();
         }
 
-        List<ReservaModelAccess> IReservaDb.GetReserva()
+        public ReservaModelAccess GetReserva(int IdReserva)
         {
-            return context.Reserva
-                          .Select(r => new ReservaModelAccess
-                          {
-                              IdReserva = r.IdReserva,
-                              IdViaje = r.IdViaje,
-                              IdPasajero = r.IdPasajero,
-                              AsientosReservados = r.AsientosReservados,
-                              MontoTotal = r.MontoTotal,
-                              FechaCreacion = r.FechaCreacion
-                          }).ToList();
-        }
-
-        ReservaModelAccess IReservaDb.GetReserva(int IdReserva)
-        {
-            var reserva = context.Reserva.Find(IdReserva);
-            if (reserva != null)
+            var Reserva = this.context.Reserva.Find(IdReserva);
+            ReservaModelAccess reserva = new ReservaModelAccess()
             {
-                return new ReservaModelAccess
-                {
-                    IdReserva = reserva.IdReserva,
-                    IdViaje = reserva.IdViaje,
-                    IdPasajero = reserva.IdPasajero,
-                    AsientosReservados = reserva.AsientosReservados,
-                    MontoTotal = reserva.MontoTotal,
-                    FechaCreacion = reserva.FechaCreacion
-                };
-            }
-             return null!;    
+                IdReserva = Reserva.IdReserva,
+                IdViaje = Reserva.IdViaje,
+                IdPasajero = Reserva.IdPasajero,
+                AsientosReservados = Reserva.AsientosReservados,
+                MontoTotal = Reserva.MontoTotal,
+                FechaCreacion = Reserva.FechaCreacion
+
+            };
+            return reserva;
         }
 
-        void IReservaDb.SaveReserva(ReservaSaveModel ReservaSaveModel)
+        public void SaveReserva(ReservaSaveModel ReservaSaveModel)
         {
-            var reserva = new Reserva
+            Reserva reserva = new Reserva() 
             {
                 IdViaje = ReservaSaveModel.IdViaje,
                 IdPasajero = ReservaSaveModel.IdPasajero,
@@ -67,25 +56,26 @@ namespace BusMonoliticApp.Web.Data.DbObjects
                 MontoTotal = ReservaSaveModel.MontoTotal,
                 FechaCreacion = ReservaSaveModel.FechaCreacion ?? DateTime.Now
             };
-
-            context.Reserva.Add(reserva);
-            context.SaveChanges();
+            this.context.Reserva.Add(reserva);
+            this.context.SaveChanges();
         }
 
-        void IReservaDb.UpdaterReserva(ReservaUpdateModel ReservaUpdateModel)
+        public void UpdaterReserva(ReservaUpdateModel ReservaUpdateModel)
         {
-            var reserva = context.Reserva.Find(ReservaUpdateModel.IdReserva);
-            if (reserva != null)
-            {
-                reserva.IdViaje = ReservaUpdateModel.IdViaje;
-                reserva.IdPasajero = ReservaUpdateModel.IdPasajero;
-                reserva.AsientosReservados = ReservaUpdateModel.AsientosReservados;
-                reserva.MontoTotal = ReservaUpdateModel.MontoTotal;
-                reserva.FechaCreacion = ReservaUpdateModel.FechaCreacion ?? reserva.FechaCreacion;
+            Reserva reservaUpadate = this.context.Reserva.Find(ReservaUpdateModel.IdReserva);
+            reservaUpadate.IdReserva = ReservaUpdateModel.IdReserva;
+            reservaUpadate.IdViaje = ReservaUpdateModel.IdViaje;
+            reservaUpadate.IdPasajero = ReservaUpdateModel.IdPasajero;
+            reservaUpadate.MontoTotal = ReservaUpdateModel.MontoTotal;
+            reservaUpadate.AsientosReservados = ReservaUpdateModel.AsientosReservados;
+            reservaUpadate.FechaCreacion = ReservaUpdateModel.FechaCreacion;
 
-                context.Reserva.Update(reserva);
-                context.SaveChanges();
-            }
+            this.context.Reserva.Update(reservaUpadate);
+            this.context.SaveChanges();
+        }
+        public void DeleteReserva(ReservaDeleteModel ReservaDeleteModel)
+        {
+            throw new NotImplementedException();
         }
     }
 }

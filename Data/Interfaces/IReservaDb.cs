@@ -1,4 +1,5 @@
 ﻿using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
+using BusTicketsMonolitic.Web.Data.Models.Reserva;
 using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
 
 

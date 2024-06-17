@@ -1,9 +1,12 @@
 ﻿using BusMonoliticApp.Web.Data.Core;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusMonoliticApp.Web.Data.Entities
 {
     public class Viaje : BaseEntity
     {
+        public int IdViaje { get; set; }
+        [Key]
         public int? IdBus { get; set; }
         public int? IdRuta { get; set; }
         public DateTime? FechaSalida { get; set; }

@@ -6,11 +6,11 @@ namespace BusMonoliticApp.Web.Data.Interfaces
 {
     public interface IReservaDetalleDb
     {
-        void SaveReservaDetalle(ReservaDetalleSaveModel reservaDetalleSaveModel);
-        void UpdateReservaDetalle(ReservaDetalleUpdateModel reservaDetalleUpdateModel);
-        void DeleteReservaDetalle(ReservaDetalleDeleteModel reservaDetalleDeleteModel);
+        void SaveReservaDetalle(ReservaDetalleSaveModel ReservaDetalleSaveModel);
+        void UpdateReservaDetalle(ReservaDetalleUpdateModel ReservaDetalleUpdateModel);
+        void DeleteReservaDetalle(ReservaDetalleDeleteModel ReservaDetalleDeleteModel);
 
-        List<ReservaDetalleModelAccess> GetReservasDetalles();
+        List<ReservaDetalleModelAccess> GetReservaDetalle();
         ReservaDetalleModelAccess GetReservaDetalle (int IdResarvaDetalle);
     }
 }

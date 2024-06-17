@@ -15,14 +15,15 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaDetalleController
         public ActionResult Index()
         {
-            var ReservaDetalle = this.ReservaDetalleDb.GetReservasDetalles();
+            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle();
             return View(ReservaDetalle);
         }
 
         // GET: ReservaDetalleController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle();
+            return View(ReservaDetalle);
         }
 
         // GET: ReservaDetalleController/Create

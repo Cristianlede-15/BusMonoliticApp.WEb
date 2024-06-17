@@ -2,7 +2,8 @@
 {
     public abstract class BaseEntity
     { 
-        public int Id { get; set; }
+        // necesito los id
+       // public int Id { get; set; }
         public DateTime? FechaCreacion { get; set; }
     }
 }

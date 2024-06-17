@@ -6,9 +6,9 @@ namespace BusMonoliticApp.Web.Data.Interfaces
 {
     public interface IRutaDb
     {
-        void SaveRuta(RutaSaveModel saveModel);
-        void UpdateRuta(RutaUpdateModel updateModel);
-        void DeleteRuta(RutaDeleteModel deleteModel);
+        void SaveRuta(RutaSaveModel RutaSaveModel);
+        void UpdateRuta(RutaUpdateModel RutaUpdateModel);
+        void DeleteRuta(RutaDeleteModel RutaDeleteModel);
         List<RutaModelAccess> GetRutas();
         RutaModelAccess GetRutas(int IdRuta);
     }

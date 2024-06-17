@@ -36,13 +36,13 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public RutaModelAccess GetRutas(int IdRuta)
         {
-            var rutaEntity = context.Ruta.FirstOrDefault(r => r.Id == IdRuta);
+            var rutaEntity = context.Ruta.FirstOrDefault(r => r.IdRuta == IdRuta);
 
             if (rutaEntity != null)
             {
                 var rutaModelAccess = new RutaModelAccess
                 {
-                    IdRuta = rutaEntity.Id,
+                    IdRuta = rutaEntity.IdRuta,
                     Origen = rutaEntity.Origen,
                     Destino = rutaEntity.Destino,
                     FechaCreacion = rutaEntity.FechaCreacion
@@ -69,7 +69,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public void UpdateRuta(RutaUpdateModel updateModel)
         {
-            var ruta = context.Ruta.FirstOrDefault(r => r.Id == updateModel.IdRuta);
+            var ruta = context.Ruta.FirstOrDefault(r => r.IdRuta == updateModel.IdRuta);
 
             if (ruta != null)
             {

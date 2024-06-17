@@ -6,9 +6,9 @@ namespace BusMonoliticApp.Web.Data.Interfaces
 {
     public interface IViajeDb
     {
-        void SaveViaje(ViajeSaveModel viajeSaveModel);
-        void UpdateViaje(ViajeUpdateModel viajeUpdateModel);
-        void DeleteViaje(ViajeDeleteModel viajeDeleteModel);
+        void SaveViaje(ViajeSaveModel ViajeSaveModel);
+        void UpdateViaje(ViajeUpdateModel ViajeUpdateModel);
+        void DeleteViaje(ViajeDeleteModel ViajeDeleteModel);
 
         List<ViajeModelAccess> GetViaje();
         ViajeModelAccess GetViaje(int IdViaje);
