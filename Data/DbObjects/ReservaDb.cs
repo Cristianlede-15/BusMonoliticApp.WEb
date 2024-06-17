@@ -48,6 +48,8 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public void SaveReserva(ReservaSaveModel ReservaSaveModel)
         {
+            try
+            { 
             Reserva reserva = new Reserva() 
             {
                 IdViaje = ReservaSaveModel.IdViaje,
@@ -58,6 +60,12 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             };
             this.context.Reserva.Add(reserva);
             this.context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                // Log the error or throw
+                throw new Exception("Error saving reservation", ex);
+            }
         }
 
         public void UpdaterReserva(ReservaUpdateModel ReservaUpdateModel)
