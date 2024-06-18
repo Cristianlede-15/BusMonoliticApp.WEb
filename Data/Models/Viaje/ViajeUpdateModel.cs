@@ -1,6 +1,8 @@
-﻿namespace BusMonoliticApp.Web.Data.Models.ViajeModelDb
+﻿using BusTicketsMonolitic.Web.Data.Models.Viaje;
+
+namespace BusMonoliticApp.Web.Data.Models.ViajeModelDb
 {
-    public class ViajeUpdateModel
+    public class ViajeUpdateModel : ViajeBaseModel
     {
         public int IdViaje { get; set; }
         public int? IdBus { get; set; }

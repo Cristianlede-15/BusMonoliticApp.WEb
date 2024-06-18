@@ -2,6 +2,7 @@ using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
+using BusMonoliticApp.Web.Data.Models.RutaModelDB;
 using BusTicketsMonolitic.Web.Data.Models.ReservaDetalle;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,20 +20,20 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         public List<ReservaDetalleModelAccess> GetReservaDetalle()
         {
             return this.context.ReservaDetalle.Select(rd => new ReservaDetalleModelAccess()
-            { 
-                IdResarvaDetalle = rd.IdReservaDetalle,
+            {
+                IdReservaDetalle = rd.IdReservaDetalle,
                 IdReserva = rd.IdReserva,
                 IdAsiento = rd.IdAsiento,
                 FechaCreacion = rd.FechaCreacion,
             } ).ToList();
         }
 
-        public ReservaDetalleModelAccess GetReservaDetalle(int IdResarvaDetalle)
+        public ReservaDetalleModelAccess GetReservaDetalle(int IdReservaDetalle)
         {
-            var ReservaDetalle = this.context.ReservaDetalle.Find(IdResarvaDetalle);
+            var ReservaDetalle = this.context.ReservaDetalle.Find(IdReservaDetalle);
             ReservaDetalleModelAccess reservaDetalle = new ReservaDetalleModelAccess()
             {
-                IdResarvaDetalle = ReservaDetalle.IdReservaDetalle,
+                IdReservaDetalle = ReservaDetalle.IdReservaDetalle,
                 IdReserva = ReservaDetalle.IdReserva,
                 IdAsiento = ReservaDetalle.IdAsiento,
                 FechaCreacion = ReservaDetalle.FechaCreacion
@@ -66,7 +67,17 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteReservaDetalle(ReservaDetalleDeleteModel ReservaDetalleDeleteModel)
         {
-            throw new NotImplementedException();
+            var reservaDetalle = context.ReservaDetalle.FirstOrDefault(rD => rD.IdReservaDetalle == ReservaDetalleDeleteModel.IdReservaDetalle);
+
+            if (reservaDetalle != null)
+            {
+                context.ReservaDetalle.Remove(reservaDetalle);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new ArgumentException("Los detalle de esta reserva no existe.");
+            }
         }
     }
 }

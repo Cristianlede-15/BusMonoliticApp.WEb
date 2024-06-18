@@ -1,6 +1,6 @@
 namespace BusTicketsMonolitic.Web.Data.Models.Viaje
 {
-    public class ViajeModelAccess
+    public class ViajeModelAccess : ViajeBaseModel
     {
         public int IdViaje { get; set; }
         public int? IdBus { get; set; }

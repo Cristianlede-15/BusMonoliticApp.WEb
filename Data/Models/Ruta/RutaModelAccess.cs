@@ -1,6 +1,6 @@
 namespace BusTicketsMonolitic.Web.Data.Models.Ruta
 {
-    public class RutaModelAccess
+    public class RutaModelAccess : RutaBaseModel
     {
         public int IdRuta { get; set; }
         public string? Origen { get; set; }

@@ -11,6 +11,6 @@ namespace BusMonoliticApp.Web.Data.Interfaces
         void DeleteReservaDetalle(ReservaDetalleDeleteModel ReservaDetalleDeleteModel);
 
         List<ReservaDetalleModelAccess> GetReservaDetalle();
-        ReservaDetalleModelAccess GetReservaDetalle (int IdResarvaDetalle);
+        ReservaDetalleModelAccess GetReservaDetalle (int IdReservaDetalle);
     }
 }

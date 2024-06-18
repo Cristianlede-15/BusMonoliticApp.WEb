@@ -1,6 +1,7 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
 using BusTicketsMonolitic.Web.Data.Models.Reserva;
 using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
@@ -83,7 +84,17 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteReserva(ReservaDeleteModel ReservaDeleteModel)
         {
-            throw new NotImplementedException();
+            var reserva = context.Reserva.FirstOrDefault(r => r.IdReserva == ReservaDeleteModel.IdReserva);
+
+            if (reserva != null)
+            {
+                context.Reserva.Remove(reserva);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new ArgumentException("Los detalle de esta reserva no existe.");
+            }
         }
     }
 }

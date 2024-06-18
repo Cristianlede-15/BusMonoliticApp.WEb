@@ -1,6 +1,8 @@
-﻿namespace BusMonoliticApp.Web.Data.Models.RutaModelDB
+﻿using BusTicketsMonolitic.Web.Data.Models.Ruta;
+
+namespace BusMonoliticApp.Web.Data.Models.RutaModelDB
 {
-    public class RutaSaveModel
+    public class RutaSaveModel : RutaBaseModel
     {
         public string? Origen {  get; set; }
         public string? Destino { get; set; }
