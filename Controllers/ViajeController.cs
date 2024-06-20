@@ -1,6 +1,7 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models.ViajeModelDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,8 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ViajeController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var Viaje = this.ViajeDb.GetViaje(id);
+            return View(Viaje);
         }
 
         // GET: ViajeController/Create
@@ -36,10 +38,12 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: ViajeController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ViajeSaveModel ViajeSaveModel)
         {
             try
             {
+                ViajeSaveModel.FechaCreacion = DateTime.Now;
+                this.ViajeDb.SaveViaje(ViajeSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -51,16 +55,19 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ViajeController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var Viaje = this.ViajeDb.GetViaje(id);
+            return View(Viaje);
         }
 
         // POST: ViajeController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(ViajeUpdateModel ViajeUpdateModel)
         {
             try
             {
+                ViajeUpdateModel.FechaCreacion = DateTime.Now;
+                this.ViajeDb.UpdateViaje(ViajeUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
