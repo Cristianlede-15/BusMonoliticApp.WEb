@@ -40,9 +40,9 @@
         </tr>
     </thead>
     <tbody>
-        
 @foreach (var item in Model) {
         <tr>
+
             <td>
                 @Html.DisplayFor(modelItem => item.IdUsuario)
             </td>
@@ -68,7 +68,7 @@
                 @Html.DisplayFor(modelItem => item.ChangeUser)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.IdUsuario }) |
+                @Html.ActionLink("Edit", "Edit", new {  id=item.IdUsuario}) |
                 @Html.ActionLink("Details", "Details", new {  id=item.IdUsuario }) |
                 
             </td>

@@ -43,7 +43,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
 
             {
-                SaveUsuario.FechaCreacion = DateTime.Now;
+                SaveUsuario.ModifyDate = DateTime.Now;
                 this.UsuarioDb.SaveUsuario(SaveUsuario);
                 return RedirectToAction(nameof(Index));
             }

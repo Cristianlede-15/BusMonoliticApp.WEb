@@ -3,11 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BusMonoliticApp.Web.Data.Models 
 {
-    public class UsuarioModel : UsuarioModelBase
+    public class UsuarioModel 
 
     {
-        public int IdUsuario { get; set; }
-        
+        public int IdUsuario { get; set; } 
         public string? Nombres { get; set; }
         public string? Apellidos { get; set; }
         public string? Correo { get; set; }

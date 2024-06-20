@@ -3,7 +3,7 @@ using BusTicketsMonolitic.Web.Data.Models.Usuario;
 
 namespace BusMonoliticApp.WEb.Data.Models
 {
-    public class UsuarioDeleteModel : UsuarioModelBase
+    public class UsuarioDeleteModel 
     {
         public int IdUsuario {get; set;}
 
