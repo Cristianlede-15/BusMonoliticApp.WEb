@@ -25,7 +25,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
                 Correo = U.Correo,
                 Clave = U.Clave,
                 TipoUsuario = U.TipoUsuario,
-                ChangeUser = U.FechaCreacion,
+                FechaCreacion = U.FechaCreacion,
 
 
             }).ToList();
@@ -47,7 +47,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
                 Correo = Usuario.Correo,
                 Clave = Usuario.Clave,
                 TipoUsuario = Usuario.TipoUsuario,
-                ChangeUser = Usuario.ChangeUser,
+                FechaCreacion = Usuario.FechaCreacion,
 
             };
             return model;
@@ -58,13 +58,13 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         {
             Usuario usuario = new Usuario()
             {
-                IdUsuario = SaveUsuario.IdUsuario,
+                
                 Nombres = SaveUsuario.Nombres,
                 Apellidos = SaveUsuario.Apellidos,
                 Correo = SaveUsuario.Correo,
                 Clave = SaveUsuario.Clave,
                 TipoUsuario = SaveUsuario.TipoUsuario,
-                ChangeUser = SaveUsuario.ChangeUser,
+                FechaCreacion = SaveUsuario.FechaCreacion,
 
             };
 
@@ -82,7 +82,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             UpdateUsuario.Correo = UpdateUsuario.Correo;
             UpdateUsuario.Clave = UpdateUsuario.Clave;
             UpdateUsuario.TipoUsuario = UpdateUsuario.TipoUsuario;
-            UpdateUsuario.ChangeUser = UpdateUsuario.ChangeUser;
+            UpdateUsuario.FechaCreacion = UpdateUsuario.FechaCreacion;
 
 
             this.context.Usuario.Update(usuarioUpdate);

@@ -45,7 +45,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try                                    
             {                                      
-                savemenu.ModifyDate = DateTime.Now;
+                savemenu.FechaCreacion = DateTime.Now;
                 this.MenuDb.SaveMenu(savemenu);
                 return RedirectToAction(nameof(Index));
             }
@@ -69,7 +69,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                UpdateMenu.ModifyDate = DateTime.Now;
+                UpdateMenu.FechaCreacion = DateTime.Now;
 
                 this.MenuDb.UpdateMenu(UpdateMenu);
                 return RedirectToAction(nameof(Index));

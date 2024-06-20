@@ -18,8 +18,8 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: UsuarioController
         public ActionResult Index()
         {
-            this.UsuarioDb.GetUsuario();
-            return View();
+            
+            return View(this.UsuarioDb.GetUsuario());
         }
 
         // GET: UsuarioController/Details/5
@@ -43,7 +43,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
 
             {
-                SaveUsuario.ModifyDate = DateTime.Now;
+                SaveUsuario.FechaCreacion = DateTime.Now;
                 this.UsuarioDb.SaveUsuario(SaveUsuario);
                 return RedirectToAction(nameof(Index));
             }
@@ -67,7 +67,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                UpdateUsuario.ModifyDate = DateTime.Now;
+                UpdateUsuario.FechaCreacion = DateTime.Now;
                 this.UsuarioDb.UpdateUsuario(UpdateUsuario);
                 return RedirectToAction(nameof(Index));
             }

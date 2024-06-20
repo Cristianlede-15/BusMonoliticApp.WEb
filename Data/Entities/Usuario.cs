@@ -11,7 +11,7 @@ namespace BusMonoliticApp.Web.Data.Entities
         public string? Correo { get; set; }
         public string? Clave { get; set; }
         public string? TipoUsuario { get; set; }
-        public DateTime ModifyDate { get; internal set; }
-        public DateTime ChangeUser { get; internal set; }
+        public DateTime? FechaCreacion { get; set; }
+      
     }
 }

@@ -12,8 +12,8 @@ namespace BusMonoliticApp.Web.Data.Models
         public string? Correo { get; set; }
         public string? Clave { get; set; }
         public string? TipoUsuario { get; set; }
-        public DateTime ModifyDate { get; set; }
-        public DateTime ChangeUser { get; set; }
+        public DateTime? FechaCreacion { get; set; }
+     
 
 
     }

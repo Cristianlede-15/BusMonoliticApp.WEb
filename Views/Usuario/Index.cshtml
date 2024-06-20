@@ -31,11 +31,9 @@
                 @Html.DisplayNameFor(model => model.TipoUsuario)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ModifyDate)
+                @Html.DisplayNameFor(model => model.FechaCreacion)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ChangeUser)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -62,10 +60,10 @@
                 @Html.DisplayFor(modelItem => item.TipoUsuario)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ModifyDate)
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ChangeUser)
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new {  id=item.IdUsuario}) |
