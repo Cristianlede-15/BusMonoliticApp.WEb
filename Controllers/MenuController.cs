@@ -2,6 +2,7 @@
 using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.WEb.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -27,7 +28,8 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: MenuController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var menu = this.MenuDb.GetMenu(id);
+            return View(menu);
         }
 
         // GET: MenuController/Create
@@ -39,10 +41,12 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: MenuController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(MenuSaveModel savemenu)
         {
-            try
-            {
+            try                                    
+            {                                      
+                savemenu.ModifyDate = DateTime.Now;
+                this.MenuDb.SaveMenu(savemenu);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -54,16 +58,20 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: MenuController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var menu = this.MenuDb.GetMenu(id);
+            return View(menu);
         }
 
         // POST: MenuController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(MenuUpdateModel UpdateMenu)
         {
             try
             {
+                UpdateMenu.ModifyDate = DateTime.Now;
+
+                this.MenuDb.UpdateMenu(UpdateMenu);
                 return RedirectToAction(nameof(Index));
             }
             catch

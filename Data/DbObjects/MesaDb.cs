@@ -6,7 +6,7 @@ using BusMonoliticApp.WEb.Data.Models;
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {
-    
+
     public class MesaDb : IMesaDb
     {
         private readonly BoletosBusContext context;
@@ -16,65 +16,63 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             this.context = context;
         }
 
-        public void DeleteMenu(MesaDeleteModel DeleteMesa)
-        {
-                        var mesa = context.Mesa.Find(DeleteMesa.IdMesa);
-            if (mesa == null)
-                throw new KeyNotFoundException("Mesa not found");
-
-            context.Mesa.Remove(mesa);
-            context.SaveChanges();
-        }
-
         public List<MesaModel> GetMesa()
         {
-                        return context.Mesa
-                .Select(mesa => new MesaModel
-                {
-                    IdMesa = mesa.Id,
-                    Capacidad = mesa.Capacidad,
-                    Estado = mesa.Estado
-                })
-                .ToList();
+            return this.context.Mesa.Select(M => new MesaModel()
+            {
+                IdMesa = M.IdMesa,
+                Capacidad = M.Capacidad,
+                Estado = M.Estado,
+
+            }).ToList();
+
         }
 
         public MesaModel GetMesa(int IdMesa)
         {
-                        var mesa = context.Mesa.Find(IdMesa);
-            if (mesa == null)
-                throw new KeyNotFoundException("Mesa not found");
-
-            return new MesaModel
+            var Mesa = this.context.Mesa.Find(IdMesa);
+            
+            MesaModel mesa = new MesaModel()
             {
-                IdMesa = mesa.Id,
-                Capacidad = mesa.Capacidad,
-                Estado = mesa.Estado
+
+                IdMesa = Mesa.IdMesa,
+                Capacidad = Mesa.Capacidad,
+                Estado = Mesa.Estado,
             };
+            return mesa;
         }
 
         public void SaveMesa(MesaSaveModel SaveMesa)
         {
-            var mesaEntity = new Mesa
+            Mesa mesa = new Mesa()
             {
+                IdMesa = SaveMesa.IdMesa,
                 Capacidad = SaveMesa.Capacidad,
-                Estado = SaveMesa.Estado
+                Estado = SaveMesa.Estado,
+        
+
             };
 
-            context.Mesa.Add(mesaEntity);
-            context.SaveChanges();
+            this.context.Mesa.Add(mesa);
+            this.context.SaveChanges();
         }
 
         public void UpdateMesa(MesaUpdateModel UpdateMesa)
         {
-            var mesa = context.Mesa.Find(UpdateMesa.IdMesa);
-            if (mesa == null)
-                throw new KeyNotFoundException("Mesa not found");
+            Mesa MesaUpdate = this.context.Mesa.Find(UpdateMesa.IdMesa);
 
-            mesa.Capacidad = UpdateMesa.Capacidad;
-            mesa.Estado = UpdateMesa.Estado;
+            UpdateMesa.IdMesa = UpdateMesa.IdMesa;
+            UpdateMesa.Capacidad = UpdateMesa.Capacidad;
+            UpdateMesa.Estado = UpdateMesa.Estado;
 
-            context.Mesa.Update(mesa);
-            context.SaveChanges();
+
+
+            this.context.Mesa.Update(MesaUpdate);
+            this.context.SaveChanges();
+        }
+        public void DeleteMenu(MesaDeleteModel DeleteMesa)
+        {
+            throw new NotImplementedException();
         }
     }
 }

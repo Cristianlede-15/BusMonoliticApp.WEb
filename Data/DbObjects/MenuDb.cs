@@ -17,70 +17,69 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public List<MenuModel> GetMenu()
         {
-            return context.Menu
-                .Select(menu => new MenuModel 
-                {
-                    IdPlato = menu.Id,
-                    Nombre = menu.Nombre,
-                    Descripcion = menu.Descripcion,
-                    Precio = menu.Precio,
-                    Categoria = menu.Categoria
-                })
-                .ToList();
+            return this.context.Menu.Select(Mu => new MenuModel()
+            {
+                IdPlato = Mu.IdPlato,
+                Nombre = Mu.Nombre,
+                Descripcion = Mu.Descripcion,
+                Precio = Mu.Precio,
+                Categoria = Mu.Categoria,
+
+
+            }).ToList();
         }
 
         public MenuModel GetMenu(int IdPlato)
         {
-                        var menu = context.Menu.Find(IdPlato);
-            if (menu == null)
-                throw new KeyNotFoundException("Menu not found");
-
-            return new MenuModel
+            var Menu = this.context.Menu.Find(IdPlato);
+            MenuModel mesa = new MenuModel()
             {
-                IdPlato = menu.Id,
-                Nombre = menu.Nombre,
-                Descripcion = menu.Descripcion,
-                Precio = menu.Precio,
-                Categoria = menu.Categoria
+                IdPlato = Menu.IdPlato,
+                Nombre = Menu.Nombre,
+                Descripcion = Menu.Descripcion,
+                Precio= Menu.Precio,
+                Categoria = Menu.Categoria,
+
+                
             };
+            return mesa;
+
         }
 
         public void SaveMenu(MenuSaveModel SaveMenu)
         {
-                        var menuEntity = new Menu
+            Menu menu = new Menu()
             {
+                IdPlato = SaveMenu.IdPlato,
                 Nombre = SaveMenu.Nombre,
-                Descripcion = SaveMenu.Descripcion,
-                Precio = SaveMenu.Precio,
-                Categoria = SaveMenu.Categoria
+                Descripcion=SaveMenu.Descripcion,
+                Precio= SaveMenu.Precio,
+                Categoria= SaveMenu.Categoria,
+
             };
 
-            context.Menu.Add(menuEntity);
-            context.SaveChanges();
+            this.context.Menu.Add(menu);
+            this.context.SaveChanges();
         }
 
         public void UpdateMenu(MenuUpdateModel UpdateMenu)
         {
-                        var menu = context.Menu.Find(UpdateMenu.IdPlato);
-            if (menu == null)
-                throw new KeyNotFoundException("Menu not found");
+            Menu MenuUpdate = this.context.Menu.Find(UpdateMenu.IdPlato);
 
-            menu.Nombre = UpdateMenu.Nombre;
-            menu.Descripcion = UpdateMenu.Descripcion;
-            menu.Precio = UpdateMenu.Precio;
-            menu.Categoria = UpdateMenu.Categoria;
+            UpdateMenu.IdPlato = UpdateMenu.IdPlato;
+            UpdateMenu.Nombre = UpdateMenu.Nombre;
+            UpdateMenu.Descripcion = UpdateMenu.Descripcion;
+            UpdateMenu.Precio = UpdateMenu.Precio;
+            UpdateMenu.Categoria = UpdateMenu.Categoria;
+    
 
-            context.Menu.Update(menu);
-            context.SaveChanges();
+
+            this.context.Menu.Update(MenuUpdate);
+            this.context.SaveChanges();
         }
         public void DeleteMenu(MenuDeleteModel DeleteMenu)
         {
-            var menu = context.Menu.Find(DeleteMenu.IdPlato);
-            if (menu == null)
-                throw new KeyNotFoundException("Menu not found");
-
-            context.Menu.Remove(menu);
-            context.SaveChanges();
+            throw new NotImplementedException();
         }
     }
     

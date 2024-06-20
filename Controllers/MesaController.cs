@@ -6,23 +6,24 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class MesaController : Controller
     {
-        private readonly IMenuDb menuDb;
+        private readonly IMesaDb mesaDb;
 
-        public MesaController(IMenuDb MenuDb)
+        public MesaController(IMesaDb MesaDb)
         {
-            menuDb = MenuDb;
+            this.mesaDb = MesaDb;
         }
         // GET: MesaController
         public ActionResult Index()
         {
-            this.menuDb.GetMenu();
+            this.mesaDb.GetMesa();
             return View();
         }
 
         // GET: MesaController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var mesa = this.mesaDb.GetMesa(id);
+            return View(mesa);
         }
 
         // GET: MesaController/Create

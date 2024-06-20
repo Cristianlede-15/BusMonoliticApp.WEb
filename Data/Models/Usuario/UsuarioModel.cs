@@ -1,10 +1,21 @@
+using BusTicketsMonolitic.Web.Data.Models.Usuario;
+using System.ComponentModel.DataAnnotations;
+
 namespace BusMonoliticApp.Web.Data.Models 
 {
-    public class UsuarioModel 
+    public class UsuarioModel : UsuarioModelBase
+
     {
-        public String? Nombres {get; set;}
-        public String? Apellido {get; set;}
-        public String? TipoUsuario {get; set;}
-        public DateTime FechaCreacion {get; set;}
+        public int IdUsuario { get; set; }
+        
+        public string? Nombres { get; set; }
+        public string? Apellidos { get; set; }
+        public string? Correo { get; set; }
+        public string? Clave { get; set; }
+        public string? TipoUsuario { get; set; }
+        public DateTime ModifyDate { get; set; }
+        public DateTime ChangeUser { get; set; }
+
+
     }
 }

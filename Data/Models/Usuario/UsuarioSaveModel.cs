@@ -1,11 +1,12 @@
-namespace BusMonoliticApp.WEb.Data.Models
+using BusMonoliticApp.Web.Data.Models;
+using BusTicketsMonolitic.Web.Data.Models.Usuario;
+namespace BusMonoliticApp.Web.Data.Models
 {
-    public class UsuarioSaveModel
+    public class UsuarioSaveModel : UsuarioModelBase
     {
-        public String? Nombres {get; set;}
-        public String? Apellido {get; set;}
-        public String? TipoUsuario {get; set;}
-        public DateTime FechaCreacion {get; set;}
+      
+        public DateTime FechaCreacion { get; set; }
+        public int CreationUser { get; set; }
 
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9c5354a0b201c688a69409bf23def2d01fda18d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00300c527dfea499f5fcc6fb555b61e694363b91")]
 [assembly: System.Reflection.AssemblyProductAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusTicketsMonolitic.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

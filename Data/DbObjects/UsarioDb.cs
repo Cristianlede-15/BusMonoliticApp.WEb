@@ -3,10 +3,11 @@ using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.WEb.Data.Models;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Context;
+using BusMonoliticApp.Web.Data.Exceptions;
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {
-    public class UsuarioDb : IUSuarioDb
+    public class UsuarioDb : IUsuarioDb
     {
         private readonly BoletosBusContext context;
 
@@ -14,71 +15,90 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         {
             this.context = context;
         }
-
-        public void DeleteUsuario(UsuarioDeleteModel DeleteUsuario)
-        {
-            var usuario = context.Usuario.Find(UsuarioDeleteModel.Id);
-            if (usuario == null)
-                throw new KeyNotFoundException("Usuario not found");
-
-            context.Usuario.Remove(usuario);
-            context.SaveChanges();
-        }
-
         public List<UsuarioModel> GetUsuario()
         {
-                return context.Usuario
-                .Select(usuario => new UsuarioModel
-                {
-                    Nombres = usuario.Nombres,
-                    Apellido = usuario.Apellidos,
-                    TipoUsuario = usuario.TipoUsuario,
-                    FechaCreacion = usuario.FechaCreacion
-                })
-                .ToList();
+            return this.context.Usuario.Select(U => new UsuarioModel()
+            {
+                IdUsuario = U.IdUsuario,
+                Nombres = U.Nombres,
+                Apellidos = U.Apellidos,
+                Correo = U.Correo,
+                Clave = U.Clave,
+                TipoUsuario = U.TipoUsuario,
+                ChangeUser = U.FechaCreacion,
+
+
+            }).ToList();
         }
 
-        public UsuarioModel GetUsuario(string? Nombres)
+            public UsuarioModel GetUsuario(int IdUsuario)
         {
-            var usuario = context.Usuario.FirstOrDefault(u => u.Nombres == Nombres);
-            if (usuario == null)
-                throw new KeyNotFoundException("Usuario not found");
+            var Usuario = this.context.Usuario.Find(IdUsuario);
 
-            return new UsuarioModel
+            if (Usuario == null)
             {
-                Nombres = usuario.Nombres,
-                Apellido = usuario.Apellidos,
-                TipoUsuario = usuario.TipoUsuario,
-                FechaCreacion = usuario.FechaCreacion
+                throw new UsuarioDbException("No se encontro al usuario con el Id proporcionado");
+            }
+            UsuarioModel model = new UsuarioModel()
+            {
+                IdUsuario = Usuario.IdUsuario,
+                Nombres = Usuario.Nombres,
+                Apellidos = Usuario.Apellidos,
+                Correo = Usuario.Correo,
+                Clave = Usuario.Clave,
+                TipoUsuario = Usuario.TipoUsuario,
+                ChangeUser = Usuario.ChangeUser,
+
             };
+            return model;
+
         }
 
         public void SaveUsuario(UsuarioSaveModel SaveUsuario)
         {
-            var usuarioEntity = new Usuario
+            Usuario usuario = new Usuario()
             {
+                IdUsuario = SaveUsuario.IdUsuario,
                 Nombres = SaveUsuario.Nombres,
-                Apellidos = SaveUsuario.Apellido,
+                Apellidos = SaveUsuario.Apellidos,
+                Correo = SaveUsuario.Correo,
+                Clave = SaveUsuario.Clave,
                 TipoUsuario = SaveUsuario.TipoUsuario,
-                FechaCreacion = SaveUsuario.FechaCreacion
+                ChangeUser = SaveUsuario.ChangeUser,
+
             };
 
-            context.Usuario.Add(usuarioEntity);
-            context.SaveChanges();
+            this.context.Usuario.Add(usuario);
+            this.context.SaveChanges();
         }
 
         public void UpdateUsuario(UsuarioUpdateModel UpdateUsuario)
         {
-            var usuario = context.Usuario.FirstOrDefault(u => u.Nombres == UpdateUsuario.Nombres);
-            if (usuario == null)
-                throw new KeyNotFoundException("Usuario not found");
+            Usuario usuarioUpdate = this.context.Usuario.Find(UpdateUsuario.IdUsuario);
 
-            usuario.Apellidos = UpdateUsuario.Apellido;
-            usuario.TipoUsuario = UpdateUsuario.TipoUsuario;
-            usuario.ModifyDate = UpdateUsuario.ModifyDate;
+            UpdateUsuario.IdUsuario = UpdateUsuario.IdUsuario;
+            UpdateUsuario.Nombres = UpdateUsuario.Nombres;
+            UpdateUsuario.Apellidos = UpdateUsuario.Apellidos;
+            UpdateUsuario.Correo = UpdateUsuario.Correo;
+            UpdateUsuario.Clave = UpdateUsuario.Clave;
+            UpdateUsuario.TipoUsuario = UpdateUsuario.TipoUsuario;
+            UpdateUsuario.ChangeUser = UpdateUsuario.ChangeUser;
 
-            context.Usuario.Update(usuario);
-            context.SaveChanges();
+
+            this.context.Usuario.Update(usuarioUpdate);
+            this.context.SaveChanges();
         }
-    }
-}
+        public void DeleteUsuario(UsuarioDeleteModel usuarioDelete)
+        {
+ 
+
+        }  
+    }      
+}          
+           
+           
+           
+
+
+           
+           

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<BusMonoliticApp.Web.Data.Models.MenuModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Menu</h1>
+
+<p>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.IdPlato }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.IdPlato }) |
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,4 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.WEb.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,24 +8,25 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class UsuarioController : Controller
     {
-        private readonly IMenuDb menuDb;
+        private readonly IUsuarioDb UsuarioDb;
 
-        public UsuarioController(IMenuDb MenuDb)
+        public UsuarioController(IUsuarioDb UsuarioDb)
         {
-            menuDb = MenuDb;
+            this.UsuarioDb = UsuarioDb;
         }
 
         // GET: UsuarioController
         public ActionResult Index()
         {
-            this.menuDb.GetMenu();
+            this.UsuarioDb.GetUsuario();
             return View();
         }
 
         // GET: UsuarioController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var usuario = this.UsuarioDb.GetUsuario(id);
+            return View(usuario);
         }
 
         // GET: UsuarioController/Create
@@ -35,10 +38,13 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: UsuarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(UsuarioSaveModel SaveUsuario)
         {
             try
+
             {
+                SaveUsuario.FechaCreacion = DateTime.Now;
+                this.UsuarioDb.SaveUsuario(SaveUsuario);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -50,16 +56,19 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: UsuarioController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var usuario = this.UsuarioDb.GetUsuario(id);
+            return View(usuario);
         }
 
         // POST: UsuarioController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(UsuarioUpdateModel UpdateUsuario)
         {
             try
             {
+                UpdateUsuario.ModifyDate = DateTime.Now;
+                this.UsuarioDb.UpdateUsuario(UpdateUsuario);
                 return RedirectToAction(nameof(Index));
             }
             catch
