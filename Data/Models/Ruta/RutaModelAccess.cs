@@ -1,4 +1,4 @@
-namespace BusTicketsMonolitic.Web.Data.Models.Ruta
+namespace BusMonoliticApp.Web.Data.Models.Ruta
 {
     public class RutaModelAccess : RutaBaseModel
     {

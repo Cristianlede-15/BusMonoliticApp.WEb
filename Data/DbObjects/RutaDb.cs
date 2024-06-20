@@ -4,7 +4,7 @@ using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
 using BusMonoliticApp.Web.Data.Models.RutaModelDB;
 using BusMonoliticApp.Web.Data.Models.ViajeModelDb;
-using BusTicketsMonolitic.Web.Data.Models.Ruta;
+using BusMonoliticApp.Web.Data.Models.Ruta;
 
 namespace BusMonoliticApp.Web.Data.DbObjects
 {

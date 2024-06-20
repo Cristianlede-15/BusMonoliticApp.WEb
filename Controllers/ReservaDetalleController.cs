@@ -1,5 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,10 +36,12 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: ReservaDetalleController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ReservaDetalleSaveModel ReservaDetalleSaveModel)
         {
             try
             {
+                ReservaDetalleSaveModel.FechaCreacion = DateTime.Now;
+                this.ReservaDetalleDb.SaveReservaDetalle(ReservaDetalleSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -50,16 +53,19 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaDetalleController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle(id);
+            return View(ReservaDetalle);
         }
 
         // POST: ReservaDetalleController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(ReservaDetalleUpdateModel ReservaDetalleUpdateModel)
         {
             try
             {
+                ReservaDetalleUpdateModel.FechaCreacion = DateTime.Now;
+                this.ReservaDetalleDb.UpdateReservaDetalle(ReservaDetalleUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch

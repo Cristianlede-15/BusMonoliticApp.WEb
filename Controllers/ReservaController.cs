@@ -1,6 +1,7 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,22 +25,26 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var Reserva = this.ReservaDb.GetReserva(id);
+            return View(Reserva);
         }
 
         // GET: ReservaController/Create
         public ActionResult Create()
         {
+            
             return View();
         }
 
         // POST: ReservaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ReservaSaveModel ReservaSaveModel)
         {
             try
             {
+                ReservaSaveModel.FechaCreacion = DateTime.Now;
+                this.ReservaDb.SaveReserva(ReservaSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -51,16 +56,19 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var Reserva = this.ReservaDb.GetReserva(id);
+            return View(Reserva);
         }
 
         // POST: ReservaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(ReservaUpdateModel ReservaUpdateModel)
         {
             try
             {
+                ReservaUpdateModel.FechaCreacion = DateTime.Now;
+                this.ReservaDb.UpdaterReserva(ReservaUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -82,6 +90,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
+
                 return RedirectToAction(nameof(Index));
             }
             catch

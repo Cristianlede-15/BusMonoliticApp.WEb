@@ -6,8 +6,9 @@ namespace BusMonoliticApp.Web.Data.Entities
 {
     public class Reserva : BaseEntity
     {
-        public int IdReserva { get; set; }
         [Key]
+        public int IdReserva { get; set; }
+        
         public int? IdViaje { get; set; }
         //  IdPasajero tiene que ser eliminado, No esta en la base de datos
         public int? IdPasajero { get; set; }

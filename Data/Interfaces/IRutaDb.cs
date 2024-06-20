@@ -1,5 +1,5 @@
 using BusMonoliticApp.Web.Data.Models.RutaModelDB;
-using BusTicketsMonolitic.Web.Data.Models.Ruta;
+using BusMonoliticApp.Web.Data.Models.Ruta;
 
 
 namespace BusMonoliticApp.Web.Data.Interfaces

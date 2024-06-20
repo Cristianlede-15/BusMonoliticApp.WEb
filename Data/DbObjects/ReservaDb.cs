@@ -1,5 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
+using BusMonoliticApp.Web.Data.Exceptions;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
@@ -34,6 +35,10 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         public ReservaModelAccess GetReserva(int IdReserva)
         {
             var Reserva = this.context.Reserva.Find(IdReserva);
+            if (Reserva == null)
+            {
+                throw new ReservaDbException($"No se encontro reserva");
+            }
             ReservaModelAccess reserva = new ReservaModelAccess()
             {
                 IdReserva = Reserva.IdReserva,
