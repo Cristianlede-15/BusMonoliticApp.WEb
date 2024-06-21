@@ -15,8 +15,8 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: MesaController
         public ActionResult Index()
         {
-            this.mesaDb.GetMesa();
-            return View();
+           
+            return View(this.mesaDb.GetMesa());
         }
 
         // GET: MesaController/Details/5

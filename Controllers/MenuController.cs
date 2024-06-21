@@ -20,9 +20,8 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: MenuController
         public ActionResult Index()
         {
-            var Menu = this.MenuDb.GetMenu();
             
-            return View(Menu);
+            return View(this.MenuDb.GetMenu());
         }
 
         // GET: MenuController/Details/5
@@ -45,7 +44,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try                                    
             {                                      
-                savemenu.FechaCreacion = DateTime.Now;
+                
                 this.MenuDb.SaveMenu(savemenu);
                 return RedirectToAction(nameof(Index));
             }
@@ -69,7 +68,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                UpdateMenu.FechaCreacion = DateTime.Now;
+                
 
                 this.MenuDb.UpdateMenu(UpdateMenu);
                 return RedirectToAction(nameof(Index));

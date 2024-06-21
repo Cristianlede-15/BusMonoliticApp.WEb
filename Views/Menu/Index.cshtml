@@ -7,6 +7,12 @@
 <h1>Menu</h1>
 
 <p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
@@ -25,7 +31,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPlato)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
@@ -40,8 +48,8 @@
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.IdPlato }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.IdPlato }) |
-                
+                @Html.ActionLink("Details", "Details", new {  id=item.IdPlato  }) |
+               
             </td>
         </tr>
 }

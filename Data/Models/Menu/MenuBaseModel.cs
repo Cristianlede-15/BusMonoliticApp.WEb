@@ -4,7 +4,7 @@ namespace BusMonoliticApp.Web.Data.Models.Menu
 {
 
 
-    public abstract class MenuBaseModel : UsuarioModelBase
+    public abstract class MenuBaseModel 
     {
             public int IdPlato { get; set; }
             public String? Nombre { get; set; }

@@ -3,7 +3,7 @@ using BusMonoliticApp.Web.Data.Models.Menu;
 namespace BusMonoliticApp.WEb.Data.Models
 { 
 
-        public class MenuUpdateModel : MenuBaseModel
+        public class MenuUpdateModel
     {
         public int IdPlato { get; set; }
         public String? Nombre { get; set; }
