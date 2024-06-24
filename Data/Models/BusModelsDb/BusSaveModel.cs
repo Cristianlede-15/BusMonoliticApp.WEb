@@ -4,5 +4,6 @@
     {
 
         public DateTime? FechaCreacion { get; set; }
+        public object Disponible { get; internal set; }
     }
 }

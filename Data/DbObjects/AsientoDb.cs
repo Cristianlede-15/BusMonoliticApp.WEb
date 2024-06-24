@@ -112,7 +112,6 @@ namespace BusTicketsMonolitic.Web.Data.DbObjects
                 asientoExistente.IdBus = asientoUpdateModel.IdBus;
                 asientoExistente.NumeroPiso = asientoUpdateModel.NumeroPiso;
                 asientoExistente.NumeroAsiento = asientoUpdateModel.NumeroAsiento;
-                asientoExistente.FechaModificacion = (DateTime)asientoUpdateModel.FechaModificacion;
 
                 this.context.Asiento.Update(asientoExistente);
                 this.context.SaveChanges();

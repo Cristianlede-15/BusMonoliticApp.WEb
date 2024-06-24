@@ -11,7 +11,7 @@ namespace BusMonoliticApp.Web.Data.Entities
         public int? NumeroPiso {  get; set; }
         public int? NumeroAsiento { get; set; }
 
-        public DateTime FechaModificacion { get; set; }
+        //public DateTime FechaModificacion { get; set; }
         public DateTime? FechaCreacion { get; internal set; }
     }
 }

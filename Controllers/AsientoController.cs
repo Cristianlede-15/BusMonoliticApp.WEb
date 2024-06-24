@@ -1,31 +1,43 @@
-﻿using BusTicketsMonolitic.Web.Data.Interfaces;
+﻿using BusTicketsMonolitic.Web.BL.Interfaces;
 using BusTicketsMonolitic.Web.Data.Models.AsientoModels;
+using BusTicketsMonolitic.Web.Data.Models.AsientoModelsDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.AccessControl;
 
 namespace BusTicketsMonolitic.Web.Controllers
 {
     public class AsientoController : Controller
     {
-        private readonly IAsientoDb asientoDb;
+        private readonly IAsientoService asientoService;
 
-        public AsientoController(IAsientoDb asientoDb)
+        public AsientoController(IAsientoService asientoService)
         {
-            this.asientoDb = asientoDb;
+            this.asientoService = asientoService;
         }
 
         // GET: AsientoController
         public ActionResult Index()
         {
-            var asientos = this.asientoDb.GetAsientos();
+            var result = this.asientoService.GetAsientos();
+            if (!result.Success)
+            {
+                ViewBag.Message = result.Message;
+            }
+
+            var asientos = (List<AsientoModelsAccess>)result.Data;
             return View(asientos);
         }
 
         // GET: AsientoController/Details/5
         public ActionResult Details(int id)
         {
-            var asiento = this.asientoDb.GetAsientos(id);
-            return View(asiento);
+            var result = this.asientoService.GetAsiento(id);
+            if (!result.Success)
+            {
+                return NotFound();
+            }
+            return View(result.Data);
         }
 
         // GET: AsientoController/Create
@@ -41,20 +53,37 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                this.asientoDb.SaveAsiento(asientoSave);
+                var result = this.asientoService.SaveAsiento(asientoSave);
+                if (!result.Success)
+                {
+                    ViewBag.Message = result.Message;
+                    return View(asientoSave);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(asientoSave);
             }
         }
 
         // GET: AsientoController/Edit/5
         public ActionResult Edit(int id)
         {
-            var asiento = this.asientoDb.GetAsientos(id);
-            return View(asiento);
+            var result = this.asientoService.GetAsiento(id);
+            if (!result.Success)
+            {
+                return NotFound();
+            }
+
+            var asiento = (AsientoModelsAccess)result.Data;
+            var asientoUpdateModel = new AsientoUpdateModel
+            {
+                IdBus = asiento.IdBus,
+                NumeroPiso = asiento.NumeroPiso,
+                NumeroAsiento = asiento.NumeroAsiento,
+            };
+            return View(asientoUpdateModel);
         }
 
         // POST: AsientoController/Edit/5
@@ -65,32 +94,53 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 asientoUpdate.FechaModificacion = DateTime.Now;
+
+                var result = this.asientoService.UpdateAsientos(asientoUpdate);
+                if (!result.Success)
+                {
+                    ViewBag.Message = result.Message;
+                    return View(asientoUpdate);
+                }
+
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(asientoUpdate);
             }
         }
 
         // GET: AsientoController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var result = this.asientoService.GetAsiento(id);
+            if (!result.Success)
+            {
+                return NotFound();
+            }
+            return View(result.Data);
         }
 
         // POST: AsientoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                var result = this.asientoService.DeleteAsientos(id);
+                if (result.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                ViewBag.Message = result.Message;
+                var asiento = this.asientoService.GetAsiento(id).Data;
+                return View(asiento);
             }
             catch
             {
-                return View();
+                var asiento = this.asientoService.GetAsiento(id).Data;
+                return View(asiento);
             }
         }
     }

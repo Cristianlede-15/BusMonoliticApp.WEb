@@ -1,4 +1,4 @@
-﻿using BusTicketsMonolitic.Web.Data.Interfaces;
+﻿using BusTicketsMonolitic.Web.BL.Interfaces;
 using BusTicketsMonolitic.Web.Data.Models.BusModelsDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,24 +7,41 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class BusController : Controller
     {
-        private readonly IBusDb busDb;
+        private readonly IBusService busService;
 
-        public BusController(IBusDb busDb)
+        public BusController(IBusService busService)
         {
-            this.busDb = busDb;
+            this.busService = busService;
         }
+
         // GET: BusController
         public ActionResult Index()
         {
-            var buses = this.busDb.GetBus();
-            return View(buses);
+            var result = busService.GetBuses();
+            if (result.Success)
+            {
+                return View(result.Data);
+            }
+            else
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View("Error");
+            }
         }
 
         // GET: BusController/Details/5
         public ActionResult Details(int id)
         {
-            var bus = this.busDb.GetBus(id);
-            return View(bus);
+            var result = busService.GetBus(id);
+            if (result.Success)
+            {
+                return View(result.Data);
+            }
+            else
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View("Error");
+            }
         }
 
         // GET: BusController/Create
@@ -40,8 +57,16 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                this.busDb.SaveBus(busSave);
-                return RedirectToAction(nameof(Index));
+                var result = busService.SaveBus(busSave);
+                if (result.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = result.Message;
+                    return View(busSave);
+                }
             }
             catch
             {
@@ -52,8 +77,26 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: BusController/Edit/5
         public ActionResult Edit(int id)
         {
-            var bus = this.busDb.GetBus(id);
-            return View(bus);
+            var result = busService.GetBus(id);
+            if (result.Success)
+            {
+                var bus = result.Data;
+                var busUpdateModel = new BusUpdateModel
+                {
+                    IdBus = bus.IdBus,
+                    Disponible = bus.Disponible,
+                    NumeroPlaca = bus.NumeroPlaca,
+                    Nombre = bus.Nombre,
+                    CapacidadPiso1 = bus.CapacidadPiso1,
+                    CapacidadPiso2 = bus.CapacidadPiso2,
+                };
+                return View(busUpdateModel);
+            }
+            else
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View("Error");
+            }
         }
 
         // POST: BusController/Edit/5
@@ -64,18 +107,37 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 busUpdate.FechaModificacion = DateTime.Now;
-                return RedirectToAction(nameof(Index));
+
+                var result = busService.UpdateBuses(busUpdate);
+                if (result.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = result.Message;
+                    return View(busUpdate);
+                }
             }
             catch
             {
-                return View();
+                return View(busUpdate);
             }
         }
 
         // GET: BusController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var result = busService.GetBus(id);
+            if (result.Success)
+            {
+                return View(result.Data);
+            }
+            else
+            {
+                ViewBag.ErrorMessage = result.Message;
+                return View("Error");
+            }
         }
 
         // POST: BusController/Delete/5
@@ -85,7 +147,17 @@ namespace BusTicketsMonolitic.Web.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                var busDeleteModel = new BusDeleteModel { IdBus = id };
+                var result = busService.DeleteBus(busDeleteModel);
+                if (result.Success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = result.Message;
+                    return View("Error");
+                }
             }
             catch
             {
