@@ -5,9 +5,9 @@ namespace BusMonoliticApp.Web.Data.Entities
 {
     public class Viaje : BaseEntity
     {
-        public int IdViaje { get; set; }
         [Key]
-        public int? IdBus { get; set; }
+        public int IdViaje { get; set; }
+             public int? IdBus { get; set; }
         public int? IdRuta { get; set; }
         public DateTime? FechaSalida { get; set; }
         public TimeSpan? HoraSalida { get; set; }

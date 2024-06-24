@@ -17,8 +17,6 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             this.context = context;
         }
 
-        
-
         public List<RutaModelAccess> GetRutas()
         {
             return this.context.Ruta.Select(ru => new RutaModelAccess()

@@ -77,7 +77,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         public void UpdateViaje(ViajeUpdateModel ViajeUpdateModel)
         {
             Viaje viajeUpdate = this.context.Viaje.Find(ViajeUpdateModel.IdViaje);
-            ViajeUpdateModel.IdViaje = ViajeUpdateModel.IdViaje;
+            //ViajeUpdateModel.IdViaje = ViajeUpdateModel.IdViaje;
             ViajeUpdateModel.IdBus = ViajeUpdateModel.IdBus;
             ViajeUpdateModel.IdRuta = ViajeUpdateModel.IdRuta;
             ViajeUpdateModel.FechaSalida = ViajeUpdateModel.FechaSalida;

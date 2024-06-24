@@ -6,7 +6,7 @@
 
 <h1>Create</h1>
 
-<h4>ViajeSaveModel</h4>
+ 
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -58,15 +58,10 @@
                 <span asp-validation-for="AsientosReservados" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AsientoDisponibles" class="control-label"></label>
-                <input asp-for="AsientoDisponibles" class="form-control" />
+                <input type="hidden" asp-for="AsientoDisponibles" class="form-control" />
                 <span asp-validation-for="AsientoDisponibles" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Completo" /> @Html.DisplayNameFor(model => model.Completo)
-                </label>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="FechaCreacion" class="control-label"></label>
                 <input asp-for="FechaCreacion" class="form-control" />
