@@ -57,10 +57,10 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         public void UpdateRuta(RutaUpdateModel RutaUpdateModel)
         {
             Ruta rutaUpdate = this.context.Ruta.Find(RutaUpdateModel.IdRuta);
-            RutaUpdateModel.IdRuta = RutaUpdateModel.IdRuta;
-            RutaUpdateModel.Origen = RutaUpdateModel.Origen;
-            RutaUpdateModel.Destino = RutaUpdateModel.Destino;
-            RutaUpdateModel.FechaCreacion = RutaUpdateModel.FechaCreacion;
+            rutaUpdate.IdRuta = RutaUpdateModel.IdRuta;
+            rutaUpdate.Origen = RutaUpdateModel.Origen;
+            rutaUpdate.Destino = RutaUpdateModel.Destino;
+            rutaUpdate.FechaCreacion = RutaUpdateModel.FechaCreacion;
             this.context.Ruta.Update(rutaUpdate);
             this.context.SaveChanges();
 

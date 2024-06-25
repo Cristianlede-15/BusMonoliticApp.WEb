@@ -3,164 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\services\\reservadetalleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\services\\reservadetalleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\ruta\\rutabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\ruta\\rutabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\core\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\core\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\ruta\\rutamodelaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\ruta\\rutamodelaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\interfaces\\iviajeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\interfaces\\iviajeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\ruta\\rutasavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\ruta\\rutasavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\interfaces\\irutaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\interfaces\\irutaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\ruta\\rutaupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\ruta\\rutaupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\interfaces\\ireservadetalleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\interfaces\\ireservadetalleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\reserva\\reservabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\reserva\\reservabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\services\\viajeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\services\\viajeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\reserva\\reservamodelaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\reserva\\reservamodelaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\services\\rutaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\services\\rutaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\reserva\\reservasavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\reserva\\reservasavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\dbobjects\\rutadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\rutadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\dbobjects\\viajedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\viajedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\controllers\\reservadetallecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:controllers\\reservadetallecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\dbobjects\\reservadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\reservadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\dbobjects\\reservadetalledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\dbobjects\\reservadetalledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\entities\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\entities\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reservadetalle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reservadetalle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\ruta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\ruta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\viaje\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\viaje\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reservadetalle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reservadetalle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\ruta\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\ruta\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\entities\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\entities\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reserva\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reserva\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\ruta\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\ruta\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\viaje\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\viaje\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\viaje\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\viaje\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\ruta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\ruta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reserva\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reserva\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reserva\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reserva\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\ruta\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\ruta\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reservadetalle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reservadetalle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reserva\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reserva\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\viaje\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\viaje\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\viaje\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\viaje\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\views\\reservadetalle\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:views\\reservadetalle\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\reservadetalle\\reservadetallesavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\reservadetalle\\reservadetallesavemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\reservadetalle\\reservadetallebasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\reservadetalle\\reservadetallebasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\models\\ruta\\rutadeletemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\models\\ruta\\rutadeletemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\data\\interfaces\\irutadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:data\\interfaces\\irutadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|c:\\users\\xavie\\desktop\\programacion\\vs code\\busmonoliticapp.web\\bl\\interfaces\\ireservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7284A4-B6BC-4106-9168-23FB5578BE44}|BusTicketsMonolitic.Web.csproj|solutionrelative:bl\\interfaces\\ireservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,508 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RutaBaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaBaseModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Ruta\\RutaBaseModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaBaseModel.cs",
-              "RelativeToolTip": "Data\\Models\\Ruta\\RutaBaseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Core\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "BL\\Core\\ServiceResult.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Core\\ServiceResult.cs",
+              "RelativeToolTip": "BL\\Core\\ServiceResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:10.231Z",
+              "WhenOpened": "2024-06-25T18:48:57.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IViajeService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IViajeService.cs",
+              "RelativeDocumentMoniker": "BL\\Interfaces\\IViajeService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IViajeService.cs",
+              "RelativeToolTip": "BL\\Interfaces\\IViajeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:18:38.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRutaService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IRutaService.cs",
+              "RelativeDocumentMoniker": "BL\\Interfaces\\IRutaService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IRutaService.cs",
+              "RelativeToolTip": "BL\\Interfaces\\IRutaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:18:21.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservaDetalleService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ReservaDetalleService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\ReservaDetalleService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ReservaDetalleService.cs",
+              "RelativeToolTip": "BL\\Services\\ReservaDetalleService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:17:45.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RutaUpdateModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaUpdateModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Ruta\\RutaUpdateModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaUpdateModel.cs",
-              "RelativeToolTip": "Data\\Models\\Ruta\\RutaUpdateModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Title": "IReservaDetalleService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IReservaDetalleService.cs",
+              "RelativeDocumentMoniker": "BL\\Interfaces\\IReservaDetalleService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IReservaDetalleService.cs",
+              "RelativeToolTip": "BL\\Interfaces\\IReservaDetalleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:23.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RutaSaveModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaSaveModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Ruta\\RutaSaveModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaSaveModel.cs",
-              "RelativeToolTip": "Data\\Models\\Ruta\\RutaSaveModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:24:56.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RutaModelAccess.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaModelAccess.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Ruta\\RutaModelAccess.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaModelAccess.cs",
-              "RelativeToolTip": "Data\\Models\\Ruta\\RutaModelAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:16.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReservaSaveModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaSaveModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Reserva\\ReservaSaveModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaSaveModel.cs",
-              "RelativeToolTip": "Data\\Models\\Reserva\\ReservaSaveModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:24:43.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReservaModelAccess.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaModelAccess.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Reserva\\ReservaModelAccess.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaModelAccess.cs",
-              "RelativeToolTip": "Data\\Models\\Reserva\\ReservaModelAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:40:15.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T18:17:40.214Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ReservaBaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaBaseModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Reserva\\ReservaBaseModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Reserva\\ReservaBaseModel.cs",
-              "RelativeToolTip": "Data\\Models\\Reserva\\ReservaBaseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Title": "ViajeService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ViajeService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\ViajeService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ViajeService.cs",
+              "RelativeToolTip": "BL\\Services\\ViajeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:27:05.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T18:14:13.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReservaDetalleController.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ReservaDetalleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservaDetalleController.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ReservaDetalleController.cs",
-              "RelativeToolTip": "Controllers\\ReservaDetalleController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAcwDgAAAAoAAAA",
+              "DocumentIndex": 6,
+              "Title": "RutaService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\RutaService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\RutaService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\RutaService.cs",
+              "RelativeToolTip": "BL\\Services\\RutaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T02:57:52.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T18:14:05.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RutaController.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\RutaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RutaController.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\RutaController.cs",
-              "RelativeToolTip": "Controllers\\RutaController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowCsAAAA7AAAA",
+              "DocumentIndex": 7,
+              "Title": "ReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ReservaService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\ReservaService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Services\\ReservaService.cs",
+              "RelativeToolTip": "BL\\Services\\ReservaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:15:30.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ViajeDb.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ViajeDb.cs",
-              "RelativeDocumentMoniker": "Data\\DbObjects\\ViajeDb.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ViajeDb.cs",
-              "RelativeToolTip": "Data\\DbObjects\\ViajeDb.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAA2wE8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T01:50:04.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T18:14:00.825Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RutaDb.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\RutaDb.cs",
-              "RelativeDocumentMoniker": "Data\\DbObjects\\RutaDb.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\RutaDb.cs",
-              "RelativeToolTip": "Data\\DbObjects\\RutaDb.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwBIAAAAAAAAA",
+              "Title": "IReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IReservaService.cs",
+              "RelativeDocumentMoniker": "BL\\Interfaces\\IReservaService.cs",
+              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\BL\\Interfaces\\IReservaService.cs",
+              "RelativeToolTip": "BL\\Interfaces\\IReservaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:59.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ruta\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Ruta\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:37:05.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reserva\\Create.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Create.cshtml",
-              "RelativeToolTip": "Views\\Reserva\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T18:44:53.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ViajeController.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ViajeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ViajeController.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ViajeController.cs",
-              "RelativeToolTip": "Controllers\\ViajeController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAcwBoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T16:11:37.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\ReservaDetalle\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Edit.cshtml",
-              "RelativeToolTip": "Views\\ReservaDetalle\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:49:59.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Entities\\Reserva.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Reserva.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Entities\\Reserva.cs",
-              "RelativeToolTip": "Data\\Entities\\Reserva.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:29:36.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ReservaDetalleDb.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ReservaDetalleDb.cs",
-              "RelativeDocumentMoniker": "Data\\DbObjects\\ReservaDetalleDb.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ReservaDetalleDb.cs",
-              "RelativeToolTip": "Data\\DbObjects\\ReservaDetalleDb.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:56:52.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ReservaController.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ReservaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservaController.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Controllers\\ReservaController.cs",
-              "RelativeToolTip": "Controllers\\ReservaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T02:18:25.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReservaDb.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ReservaDb.cs",
-              "RelativeDocumentMoniker": "Data\\DbObjects\\ReservaDb.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\DbObjects\\ReservaDb.cs",
-              "RelativeToolTip": "Data\\DbObjects\\ReservaDb.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAIwE4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:55:19.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Viaje.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Entities\\Viaje.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Viaje.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Entities\\Viaje.cs",
-              "RelativeToolTip": "Data\\Entities\\Viaje.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T19:11:06.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ruta\\Index.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Index.cshtml",
-              "RelativeToolTip": "Views\\Ruta\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:11:01.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Viaje\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Viaje\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:50:45.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Viaje\\Create.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Create.cshtml",
-              "RelativeToolTip": "Views\\Viaje\\Create.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEEAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:37:58.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ruta\\Details.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Details.cshtml",
-              "RelativeToolTip": "Views\\Ruta\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:38:42.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ruta\\Create.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Create.cshtml",
-              "RelativeToolTip": "Views\\Ruta\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:16:56.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\ReservaDetalle\\Index.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Index.cshtml",
-              "RelativeToolTip": "Views\\ReservaDetalle\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:02:28.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Viaje\\Index.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Index.cshtml",
-              "RelativeToolTip": "Views\\Viaje\\Index.cshtml",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAADkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T02:04:51.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reserva\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Reserva\\Edit.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:48:14.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reserva\\Index.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Index.cshtml",
-              "RelativeToolTip": "Views\\Reserva\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T02:06:29.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\ReservaDetalle\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Delete.cshtml",
-              "RelativeToolTip": "Views\\ReservaDetalle\\Delete.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T18:50:34.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reserva\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Reserva\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Reserva\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:36:00.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ruta\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Ruta\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Ruta\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:36:43.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\ReservaDetalle\\Create.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\ReservaDetalle\\Create.cshtml",
-              "RelativeToolTip": "Views\\ReservaDetalle\\Create.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABQAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T19:23:54.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Viaje\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Viaje\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:38:06.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Viaje\\Details.cshtml",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Views\\Viaje\\Details.cshtml",
-              "RelativeToolTip": "Views\\Viaje\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T18:38:17.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ReservaDetalleSaveModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\ReservaDetalle\\ReservaDetalleSaveModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\ReservaDetalle\\ReservaDetalleSaveModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\ReservaDetalle\\ReservaDetalleSaveModel.cs",
-              "RelativeToolTip": "Data\\Models\\ReservaDetalle\\ReservaDetalleSaveModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:56:27.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ReservaDetalleBaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\ReservaDetalle\\ReservaDetalleBaseModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\ReservaDetalle\\ReservaDetalleBaseModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\ReservaDetalle\\ReservaDetalleBaseModel.cs",
-              "RelativeToolTip": "Data\\Models\\ReservaDetalle\\ReservaDetalleBaseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:49:19.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IRutaDb.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Interfaces\\IRutaDb.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\IRutaDb.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Interfaces\\IRutaDb.cs",
-              "RelativeToolTip": "Data\\Interfaces\\IRutaDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:53.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "RutaDeleteModel.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaDeleteModel.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Ruta\\RutaDeleteModel.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Data\\Models\\Ruta\\RutaDeleteModel.cs",
-              "RelativeToolTip": "Data\\Models\\Ruta\\RutaDeleteModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:25:29.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\xavie\\Desktop\\Programacion\\VS Code\\BusMonoliticApp.WEb\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:15:43.192Z"
+              "WhenOpened": "2024-06-25T18:13:38.983Z"
             }
           ]
         }

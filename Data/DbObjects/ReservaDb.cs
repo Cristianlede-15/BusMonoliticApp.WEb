@@ -76,7 +76,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public void UpdaterReserva(ReservaUpdateModel ReservaUpdateModel)
         {
-            Reserva reservaUpadate = this.context.Reserva.Find(ReservaUpdateModel.IdReserva);
+            Reserva reservaUpadate = this.context.Reserva.Find(ReservaUpdateModel.IdReserva)!;
             reservaUpadate.IdReserva = ReservaUpdateModel.IdReserva;
             reservaUpadate.IdViaje = ReservaUpdateModel.IdViaje;
             reservaUpadate.IdPasajero = ReservaUpdateModel.IdPasajero;
@@ -89,16 +89,15 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         }
         public void DeleteReserva(ReservaDeleteModel ReservaDeleteModel)
         {
-            var reserva = context.Reserva.FirstOrDefault(r => r.IdReserva == ReservaDeleteModel.IdReserva);
-
+            var reserva = this.context.Reserva.Find(ReservaDeleteModel.IdReserva);
             if (reserva != null)
             {
-                context.Reserva.Remove(reserva);
-                context.SaveChanges();
+                this.context.Reserva.Remove(reserva);
+                this.context.SaveChanges();
             }
             else
             {
-                throw new ArgumentException("Los detalle de esta reserva no existe.");
+                throw new ReservaDbException("No se encontró la reserva");
             }
         }
     }

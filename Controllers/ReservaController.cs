@@ -1,5 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.DbObjects;
+using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
 using Microsoft.AspNetCore.Http;
@@ -83,14 +84,13 @@ namespace BusTicketsMonolitic.Web.Controllers
             return View();
         }
 
-        // POST: ReservaController/Delete/5
+        // POST: ReservaDetalleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
             try
             {
-
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -99,4 +99,5 @@ namespace BusTicketsMonolitic.Web.Controllers
             }
         }
     }
+    
 }

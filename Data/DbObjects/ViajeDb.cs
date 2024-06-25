@@ -77,17 +77,17 @@ namespace BusMonoliticApp.Web.Data.DbObjects
         public void UpdateViaje(ViajeUpdateModel ViajeUpdateModel)
         {
             Viaje viajeUpdate = this.context.Viaje.Find(ViajeUpdateModel.IdViaje);
-            //ViajeUpdateModel.IdViaje = ViajeUpdateModel.IdViaje;
-            ViajeUpdateModel.IdBus = ViajeUpdateModel.IdBus;
-            ViajeUpdateModel.IdRuta = ViajeUpdateModel.IdRuta;
-            ViajeUpdateModel.FechaSalida = ViajeUpdateModel.FechaSalida;
-            ViajeUpdateModel.HoraSalida = ViajeUpdateModel.HoraSalida;
-            ViajeUpdateModel.FechaLlegada = ViajeUpdateModel.FechaSalida;
-            ViajeUpdateModel.HoraLlegada = ViajeUpdateModel.HoraLlegada;
-            ViajeUpdateModel.Precio = ViajeUpdateModel.Precio;
-            ViajeUpdateModel.TotalAsientos = ViajeUpdateModel.TotalAsientos;
-            ViajeUpdateModel.AsientosReservados = ViajeUpdateModel.AsientosReservados;
-            ViajeUpdateModel.FechaSalida = ViajeUpdateModel.FechaSalida;
+            viajeUpdate.IdViaje = ViajeUpdateModel.IdViaje;
+            viajeUpdate.IdBus = ViajeUpdateModel.IdBus;
+            viajeUpdate.IdRuta = ViajeUpdateModel.IdRuta;
+            viajeUpdate.FechaSalida = ViajeUpdateModel.FechaSalida;
+            viajeUpdate.HoraSalida = ViajeUpdateModel.HoraSalida;
+            viajeUpdate.FechaLlegada = ViajeUpdateModel.FechaSalida;
+            viajeUpdate.HoraLlegada = ViajeUpdateModel.HoraLlegada;
+            viajeUpdate.Precio = ViajeUpdateModel.Precio;
+            viajeUpdate.TotalAsientos = ViajeUpdateModel.TotalAsientos;
+            viajeUpdate.AsientosReservados = ViajeUpdateModel.AsientosReservados;
+            viajeUpdate.FechaSalida = ViajeUpdateModel.FechaSalida;
             this.context.Viaje.Update(viajeUpdate);
             this.context.SaveChanges();
 
