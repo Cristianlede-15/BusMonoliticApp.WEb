@@ -1,8 +1,10 @@
-﻿using BusMonoliticApp.Web.Data.Context;
+﻿using BusMonoliticApp.Web.BL.Core;
+using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Entities;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaModelDb;
+using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,22 +13,27 @@ namespace BusTicketsMonolitic.Web.Controllers
     public class ReservaController : Controller
     {
 
-        private readonly IReservaDb ReservaDb;
-        public ReservaController(IReservaDb ReservaDb)
+        private readonly IReservaService reservaService;
+        public ReservaController(IReservaService reservaService)
         {
-            this.ReservaDb = ReservaDb;
+            this.reservaService = reservaService;
         }
         // GET: ReservaController
         public ActionResult Index()
         {
-            var Reserva = this.ReservaDb.GetReserva();
+            var result = this.reservaService.GetReservas();
+            if (!result.Success)
+            {
+                ViewBag.Message = result.Message;
+            }
+            var Reserva = (List<ReservaModelAccess>)result.Data!;
             return View(Reserva);
         }
 
         // GET: ReservaController/Details/5
         public ActionResult Details(int id)
         {
-            var Reserva = this.ReservaDb.GetReserva(id);
+            var Reserva = this.reservaService.GetReservas(id);
             return View(Reserva);
         }
 
@@ -45,7 +52,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ReservaSaveModel.FechaCreacion = DateTime.Now;
-                this.ReservaDb.SaveReserva(ReservaSaveModel);
+                this.reservaService.SaveReserva(ReservaSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -57,7 +64,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaController/Edit/5
         public ActionResult Edit(int id)
         {
-            var Reserva = this.ReservaDb.GetReserva(id);
+            var Reserva = this.reservaService.GetReservas(id);
             return View(Reserva);
         }
 
@@ -69,7 +76,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ReservaUpdateModel.FechaCreacion = DateTime.Now;
-                this.ReservaDb.UpdaterReserva(ReservaUpdateModel);
+                this.reservaService.UpdateReservas(ReservaUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch

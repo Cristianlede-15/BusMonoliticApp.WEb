@@ -1,15 +1,17 @@
 using BusMonoliticApp.Web.BL.Core;
+using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
 using BusTicketsMonolitic.Web.BL.Core;
 using BusTicketsMonolitic.Web.BL.Interfaces;
+using BusTicketsMonolitic.Web.BL.Validaciones;
 using BusTicketsMonolitic.Web.Data.Models.ReservaDetalle;
 using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
 using Microsoft.Extensions.Logging;
 
 namespace BusMonoliticApp.Web.BL.Services
 {
-    public class ReservaDetalleService : IReservaDetalleService
+    public class ReservaDetalleService : Validaciones, IReservaDetalleService 
     {
        private readonly IReservaDetalleDb reservaDetalleDb;
         private readonly ILogger<ReservaDetalleService> logger;
@@ -32,7 +34,7 @@ namespace BusMonoliticApp.Web.BL.Services
             {
                 
                 result.Success = false;
-                result.Message = "Ocurrio un error obteniendo las reservas.";
+                result.Message = "Ocurrio un error obteniendo los detalles de las reservas.";
                 this.logger.LogError(result.Message,ex.ToString());
             }
             return result;
@@ -47,7 +49,7 @@ namespace BusMonoliticApp.Web.BL.Services
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = "Ocurrio un error obteniendo esta reserva.";
+                result.Message = "Ocurrio un error obteniendo los detalles de las reservas.";
                 this.logger.LogError(result.Message, ex.ToString());
 
 
@@ -60,12 +62,7 @@ namespace BusMonoliticApp.Web.BL.Services
             ServiceResult result = new ServiceResult();
             try
             {
-                if (reservaDetalleSaveModel is null)
-                {
-                    result.Success = false;
-                    result.Message = "El detalle de esta reserva no puede ser nulo";
-                    return result;
-                }
+                this.ValidacionNoNull(reservaDetalleSaveModel, result);
                 this.reservaDetalleDb.SaveReservaDetalle(reservaDetalleSaveModel);
             }
             catch (Exception ex)
@@ -84,12 +81,7 @@ namespace BusMonoliticApp.Web.BL.Services
             ServiceResult result = new ServiceResult();
             try
             {
-                if (reservaDetalleUpdateModel is null)
-                {
-                    result.Success= false;
-                    result.Message = "El detalle de esta reserva no puede ser nulo";
-                    return result;
-                }
+                this.ValidacionNoNull(reservaDetalleUpdateModel, result);
                 this.reservaDetalleDb.UpdateReservaDetalle(reservaDetalleUpdateModel);
             }
             catch (Exception ex)
@@ -108,19 +100,14 @@ namespace BusMonoliticApp.Web.BL.Services
             ServiceResult result = new ServiceResult();
             try
             {
-                if (reservaDetalleDeleteModel is null)
-                {
-                    result.Success = false;
-                    result.Message = "El detalle de esta reserva no puede ser nulo";
-                    return result;
-                }
+                this.ValidacionNoNull(reservaDetalleDeleteModel, result);
                 this.reservaDetalleDb.DeleteReservaDetalle(reservaDetalleDeleteModel);
             }
             catch (Exception ex)
             {
 
                 result.Success = false;
-                result.Message = "Ocurrio un error eliminando esta reserva.";
+                result.Message = "Ocurrio un error eliminando los detalles de esta reserva.";
                 this.logger.LogError(result.Message, ex.ToString());
 
             }

@@ -8,7 +8,7 @@ namespace BusMonoliticApp.Web.BL.Core
     {
         ServiceResult GetReservas();
         ServiceResult GetReservas(int id);
-        ServiceResult UpdateReservas(ReservaSaveModel reservaSaveModel);
+        ServiceResult UpdateReservas(ReservaUpdateModel reservaUpdateModel);
         ServiceResult DeleteReservas(ReservaDeleteModel reservaDeleteModel);
         ServiceResult SaveReserva(ReservaSaveModel reservaSaveModel);
     }

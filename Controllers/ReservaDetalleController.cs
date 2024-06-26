@@ -1,29 +1,37 @@
 ﻿using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ReservaDetalleModelDb;
+using BusTicketsMonolitic.Web.Data.Models.ReservaDetalle;
+using BusMonoliticApp.Web.BL.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using BusTicketsMonolitic.Web.BL.Interfaces;
 
 namespace BusTicketsMonolitic.Web.Controllers
 {
     public class ReservaDetalleController : Controller
     {
-        private readonly IReservaDetalleDb ReservaDetalleDb;
-        public ReservaDetalleController(IReservaDetalleDb ReservaDetalleDb)
+        private readonly IReservaDetalleService ReservaDetalleService;
+        public ReservaDetalleController(IReservaDetalleService ReservaDetalleService)
         {
-            this.ReservaDetalleDb = ReservaDetalleDb;
+            this.ReservaDetalleService = ReservaDetalleService;
         }
         // GET: ReservaDetalleController
         public ActionResult Index()
         {
-            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle();
+            var result = this.ReservaDetalleService.GetReservaDetalles();
+            if (!result.Success)
+            {
+                ViewBag.Message = result.Message;
+            }
+            var ReservaDetalle = (List<ReservaDetalleModelAccess>)result.Data!;
             return View(ReservaDetalle);
         }
 
         // GET: ReservaDetalleController/Details/5
         public ActionResult Details(int id)
         {
-            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle();
+            var ReservaDetalle = this.ReservaDetalleService.GetReservaDetalles();
             return View(ReservaDetalle);
         }
 
@@ -41,7 +49,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ReservaDetalleSaveModel.FechaCreacion = DateTime.Now;
-                this.ReservaDetalleDb.SaveReservaDetalle(ReservaDetalleSaveModel);
+                this.ReservaDetalleService.SaveReservaDetalles(ReservaDetalleSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -53,7 +61,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ReservaDetalleController/Edit/5
         public ActionResult Edit(int id)
         {
-            var ReservaDetalle = this.ReservaDetalleDb.GetReservaDetalle(id);
+            var ReservaDetalle = this.ReservaDetalleService.GetReservaDetalles(id);
             return View(ReservaDetalle);
         }
 
@@ -65,7 +73,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ReservaDetalleUpdateModel.FechaCreacion = DateTime.Now;
-                this.ReservaDetalleDb.UpdateReservaDetalle(ReservaDetalleUpdateModel);
+                this.ReservaDetalleService.UpdateReservaDetalles(ReservaDetalleUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch

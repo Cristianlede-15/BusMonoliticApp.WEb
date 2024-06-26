@@ -2,6 +2,9 @@
 using BusMonoliticApp.Web.Data.DbObjects;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models.ViajeModelDb;
+using BusTicketsMonolitic.Web.BL.Interfaces;
+using BusTicketsMonolitic.Web.Data.Models.ReservaModelDb;
+using BusTicketsMonolitic.Web.Data.Models.Viaje;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,23 +12,28 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class ViajeController : Controller
     {
-        private readonly IViajeDb ViajeDb;
-        public ViajeController(IViajeDb ViajeDb)
+        private readonly IViajeService viajeService; 
+        public ViajeController(IViajeService viajeService)
         {
-            this.ViajeDb = ViajeDb;
+            this.viajeService = viajeService;
         }
         // GET: ViajeController
         public ActionResult Index()
         {
 
-            var Viaje = this.ViajeDb.GetViaje();
+            var result = this.viajeService.GetViaje();
+            if (!result.Success)
+            {
+                ViewBag.Message = result.Message;
+            }
+            var Viaje = (List<ViajeModelAccess>)result.Data!;
             return View(Viaje);
         }
 
         // GET: ViajeController/Details/5
         public ActionResult Details(int id)
         {
-            var Viaje = this.ViajeDb.GetViaje(id);
+            var Viaje = this.viajeService.GetViaje(id);
             return View(Viaje);
         }
 
@@ -43,7 +51,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ViajeSaveModel.FechaCreacion = DateTime.Now;
-                this.ViajeDb.SaveViaje(ViajeSaveModel);
+                this.viajeService.SaveViaje(ViajeSaveModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -55,7 +63,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: ViajeController/Edit/5
         public ActionResult Edit(int id)
         {
-            var Viaje = this.ViajeDb.GetViaje(id);
+            var Viaje = this.viajeService.GetViaje(id);
             return View(Viaje);
         }
 
@@ -67,7 +75,7 @@ namespace BusTicketsMonolitic.Web.Controllers
             try
             {
                 ViajeUpdateModel.FechaCreacion = DateTime.Now;
-                this.ViajeDb.UpdateViaje(ViajeUpdateModel);
+                this.viajeService.UpDateViaje(ViajeUpdateModel);
                 return RedirectToAction(nameof(Index));
             }
             catch
