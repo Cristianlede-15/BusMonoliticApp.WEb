@@ -64,7 +64,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public void UpdateMenu(MenuUpdateModel UpdateMenu)
         {
-            Menu MenuUpdate = this.context.Menu.Find(UpdateMenu.IdPlato);
+            Menu UpdatMenu = this.context.Menu.Find(UpdateMenu.IdPlato);
 
             UpdateMenu.IdPlato = UpdateMenu.IdPlato;
             UpdateMenu.Nombre = UpdateMenu.Nombre;
@@ -74,7 +74,7 @@ namespace BusMonoliticApp.Web.Data.DbObjects
     
 
 
-            this.context.Menu.Update(MenuUpdate);
+            this.context.Menu.Update(UpdatMenu);
             this.context.SaveChanges();
         }
         public void DeleteMenu(MenuDeleteModel DeleteMenu)

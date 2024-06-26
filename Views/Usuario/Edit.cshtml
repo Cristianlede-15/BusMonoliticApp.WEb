@@ -6,36 +6,21 @@
 
 <h1>Edit</h1>
 
-
+<h4>UsuarioModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nombres" class="control-label"></label>
-                <input asp-for="Nombres" class="form-control" />
-                <span asp-validation-for="Nombres" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Apellidos" class="control-label"></label>
-                <input asp-for="Apellidos" class="form-control" />
-                <span asp-validation-for="Apellidos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TipoUsuario" class="control-label"></label>
-                <input asp-for="TipoUsuario" class="form-control" />
-                <span asp-validation-for="TipoUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input asp-for="FechaCreacion" class="form-control" />
-                <label asp-for="FechaCreacion" class="control-label"></label>
-                <span asp-validation-for="FechaCreacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="IdUsuario" class="control-label"></label>
                 <input asp-for="IdUsuario" class="form-control" />
                 <span asp-validation-for="IdUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombres" class="control-label"></label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Apellidos" class="control-label"></label>
@@ -52,7 +37,16 @@
                 <input asp-for="Clave" class="form-control" />
                 <span asp-validation-for="Clave" class="text-danger"></span>
             </div>
-
+            <div class="form-group">
+                <label asp-for="TipoUsuario" class="control-label"></label>
+                <input asp-for="TipoUsuario" class="form-control" />
+                <span asp-validation-for="TipoUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaCreacion" class="control-label"></label>
+                <input asp-for="FechaCreacion" class="form-control" />
+                <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

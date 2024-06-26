@@ -43,8 +43,7 @@ namespace BusTicketsMonolitic.Web.Controllers
         public ActionResult Create(MenuSaveModel savemenu)
         {
             try                                    
-            {                                      
-                
+            {
                 this.MenuDb.SaveMenu(savemenu);
                 return RedirectToAction(nameof(Index));
             }

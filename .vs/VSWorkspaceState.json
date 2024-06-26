@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BL",
+    "\\BL\\Services",
+    "\\Data",
+    "\\Data\\Models"
   ],
   "SelectedNode": "\\BusMonoliticApp.WEb.sln",
   "PreviewInSolutionExplorer": false

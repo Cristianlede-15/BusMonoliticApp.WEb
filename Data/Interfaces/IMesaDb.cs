@@ -7,9 +7,9 @@ namespace BusMonoliticApp.Web.Data.Interfaces
 {
     public interface IMesaDb
     {
-        void SaveMesa (MesaSaveModel SaveMesa);
-        void UpdateMesa (MesaUpdateModel UpdateMesa);
-        void DeleteMenu(MesaDeleteModel DeleteMesa);
+        void agregarMesa (MesaSaveModel SaveMesa);
+        void ActualizarMesa (MesaUpdateModel UpdateMesa);
+        void DeleteMesa(MesaDeleteModel DeleteMesa);
         List <MesaModel> GetMesa();
 
         MesaModel GetMesa(int IdMesa);

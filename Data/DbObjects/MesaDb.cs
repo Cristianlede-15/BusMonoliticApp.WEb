@@ -1,5 +1,6 @@
 using BusMonoliticApp.Web.Data.Context;
 using BusMonoliticApp.Web.Data.Entities;
+using BusMonoliticApp.Web.Data.Exceptions;
 using BusMonoliticApp.Web.Data.Interfaces;
 using BusMonoliticApp.Web.Data.Models;
 using BusMonoliticApp.WEb.Data.Models;
@@ -30,26 +31,30 @@ namespace BusMonoliticApp.Web.Data.DbObjects
 
         public MesaModel GetMesa(int IdMesa)
         {
+        
             var Mesa = this.context.Mesa.Find(IdMesa);
-            
-            MesaModel mesa = new MesaModel()
+
+            if (Mesa == null)
+            {
+                throw new UsuarioDbException("No se encontro al usuario con el Id proporcionado");
+            }
+            MesaModel Mesita = new MesaModel()
             {
 
                 IdMesa = Mesa.IdMesa,
                 Capacidad = Mesa.Capacidad,
                 Estado = Mesa.Estado,
             };
-            return mesa;
+            return Mesita;
         }
-
-        public void SaveMesa(MesaSaveModel SaveMesa)
+        public void agregarMesa(MesaSaveModel SaveMesa)
         {
             Mesa mesa = new Mesa()
             {
                 IdMesa = SaveMesa.IdMesa,
                 Capacidad = SaveMesa.Capacidad,
                 Estado = SaveMesa.Estado,
-        
+
 
             };
 
@@ -57,22 +62,24 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             this.context.SaveChanges();
         }
 
-        public void UpdateMesa(MesaUpdateModel UpdateMesa)
+        public void ActualizarMesa(MesaUpdateModel UpdateMesa)
         {
             Mesa MesaUpdate = this.context.Mesa.Find(UpdateMesa.IdMesa);
 
-            UpdateMesa.IdMesa = UpdateMesa.IdMesa;
-            UpdateMesa.Capacidad = UpdateMesa.Capacidad;
-            UpdateMesa.Estado = UpdateMesa.Estado;
+            MesaUpdate.IdMesa = UpdateMesa.IdMesa;
+            MesaUpdate.Capacidad = UpdateMesa.Capacidad;
+            MesaUpdate.Estado = UpdateMesa.Estado;
 
 
 
             this.context.Mesa.Update(MesaUpdate);
             this.context.SaveChanges();
         }
-        public void DeleteMenu(MesaDeleteModel DeleteMesa)
+        public void DeleteMesa(MesaDeleteModel DeleteMesa)
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

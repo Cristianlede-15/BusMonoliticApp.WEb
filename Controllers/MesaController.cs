@@ -1,4 +1,6 @@
 ﻿using BusMonoliticApp.Web.Data.Interfaces;
+using BusMonoliticApp.Web.Data.Models;
+using BusMonoliticApp.WEb.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,23 +8,23 @@ namespace BusTicketsMonolitic.Web.Controllers
 {
     public class MesaController : Controller
     {
-        private readonly IMesaDb mesaDb;
+        private readonly IMesaDb MesaDb;
 
         public MesaController(IMesaDb MesaDb)
         {
-            this.mesaDb = MesaDb;
+            this.MesaDb = MesaDb;
         }
         // GET: MesaController
         public ActionResult Index()
         {
-           
-            return View(this.mesaDb.GetMesa());
+            
+            return View(this.MesaDb.GetMesa());
         }
 
         // GET: MesaController/Details/5
         public ActionResult Details(int id)
         {
-            var mesa = this.mesaDb.GetMesa(id);
+            var mesa = this.MesaDb.GetMesa(id);
             return View(mesa);
         }
 
@@ -35,10 +37,11 @@ namespace BusTicketsMonolitic.Web.Controllers
         // POST: MesaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(MesaSaveModel SaveMesa)
         {
             try
             {
+                this.MesaDb.agregarMesa(SaveMesa);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -50,16 +53,18 @@ namespace BusTicketsMonolitic.Web.Controllers
         // GET: MesaController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var actu = this.MesaDb.GetMesa(id);
+            return View(actu);
         }
 
         // POST: MesaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(MesaUpdateModel UpdateMesa)
         {
             try
             {
+                this.MesaDb.ActualizarMesa(UpdateMesa);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -72,20 +72,20 @@ namespace BusMonoliticApp.Web.Data.DbObjects
             this.context.SaveChanges();
         }
 
-        public void UpdateUsuario(UsuarioUpdateModel UpdateUsuario)
+        public void UpdateUsuario(UsuarioUpdateModel usuarioupdate)
         {
-            Usuario usuarioUpdate = this.context.Usuario.Find(UpdateUsuario.IdUsuario);
+            Usuario cambio = this.context.Usuario.Find(usuarioupdate.IdUsuario);
 
-            UpdateUsuario.IdUsuario = UpdateUsuario.IdUsuario;
-            UpdateUsuario.Nombres = UpdateUsuario.Nombres;
-            UpdateUsuario.Apellidos = UpdateUsuario.Apellidos;
-            UpdateUsuario.Correo = UpdateUsuario.Correo;
-            UpdateUsuario.Clave = UpdateUsuario.Clave;
-            UpdateUsuario.TipoUsuario = UpdateUsuario.TipoUsuario;
-            UpdateUsuario.FechaCreacion = UpdateUsuario.FechaCreacion;
+            
+            cambio.Nombres = usuarioupdate.Nombres;
+            cambio.Apellidos = usuarioupdate.Apellidos;
+            cambio.Correo = usuarioupdate.Correo;
+            cambio.Clave = usuarioupdate.Clave;
+            cambio.TipoUsuario = usuarioupdate.TipoUsuario;
+            cambio.FechaCreacion = usuarioupdate.FechaCreacion;
 
 
-            this.context.Usuario.Update(usuarioUpdate);
+            this.context.Usuario.Update(cambio);
             this.context.SaveChanges();
         }
         public void DeleteUsuario(UsuarioDeleteModel usuarioDelete)

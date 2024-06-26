@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 
-
 namespace BusMonoliticApp.Web.Data.Context
 {
     public class BoletosBusContext : DbContext
@@ -17,6 +16,11 @@ namespace BusMonoliticApp.Web.Data.Context
         public DbSet<Menu> Menu {get; set;}
         public DbSet<Mesa> Mesa {get; set;}
         public DbSet<Usuario> Usuario {get; set;}
+
+        internal void SaveChanges(Usuario cambio)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

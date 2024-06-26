@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BoletosBusContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BoletoBusContext")));
 builder.Services.AddScoped<IMenuDb, MenuDb>();
 builder.Services.AddScoped<IUsuarioDb, UsuarioDb>();
-
+builder.Services.AddScoped<IMesaDb, MesaDb>();
 
 var app = builder.Build();
 

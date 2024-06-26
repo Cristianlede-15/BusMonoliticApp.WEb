@@ -7,7 +7,7 @@ namespace BusMonoliticApp.Web.Data.Interfaces
     public interface IUsuarioDb 
     {
         void SaveUsuario (UsuarioSaveModel SaveUsuario);
-        void UpdateUsuario (UsuarioUpdateModel UpdateUsuario);
+        void UpdateUsuario (UsuarioUpdateModel usuarioupdate);
         void DeleteUsuario(UsuarioDeleteModel usuarioDelete);
         List <UsuarioModel> GetUsuario();
 
